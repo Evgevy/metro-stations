@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Метро</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <script src="videotube/videotube.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+      <section class="metro">
+        <div class="metro__container">
+          <h3 class="metro__title">Станции метро</h3>
+          <div class="metro__tab-defualt">
+            <div class="metro__tabs"> 
+              <ul class="metro__tablist"> 
+                <li class="metro__item">
+                  <button class="metro__btn metro__btn--active" type="button" data-tab="tub-1"><svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.200195 24V22.2094H2.37832L11.2236 0L17.2002 12.5345L23.1768 0L32.0221 22.2094H34.2002V24H21.9549V22.2094H24.3986L21.5564 15.2071L17.2002 24L12.8174 15.2071L9.9752 22.2094H12.4721V24H0.200195Z" fill="#0078BE"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-2"><svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.900391 24V22.2094H3.07852L11.9238 0L17.9004 12.5345L23.877 0L32.7223 22.2094H34.9004V24H22.6551V22.2094H25.0988L22.2566 15.2071L17.9004 24L13.5176 15.2071L10.6754 22.2094H13.1723V24H0.900391Z" fill="#82C0C0"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-3"><svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 24V22.2094H2.17813L11.0234 0L17 12.5345L22.9766 0L31.8219 22.2094H34V24H21.7547V22.2094H24.1984L21.3563 15.2071L17 24L12.6172 15.2071L9.775 22.2094H12.2719V24H0Z" fill="#A1B3D4"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-4"><svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.0996094 24V22.2094H2.27773L11.123 0L17.0996 12.5345L23.0762 0L31.9215 22.2094H34.0996V24H21.8543V22.2094H24.298L21.4559 15.2071L17.0996 24L12.7168 15.2071L9.87461 22.2094H12.3715V24H0.0996094Z" fill="#2DBE2C"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-5"><svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 21.7862V20.1766H2.24219L11.3477 0.213867L17.5 11.4805L23.6523 0.213867L32.7578 20.1766H35V21.7862H22.3945V20.1766H24.9102L21.9844 13.8827L17.5 21.7862L12.9883 13.8827L10.0625 20.1766H12.6328V21.7862H0Z" fill="#FBCA27"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-6"><svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.400391 24V22.2094H2.57852L11.4238 0L17.4004 12.5345L23.377 0L32.2223 22.2094H34.4004V24H22.1551V22.2094H24.5988L21.7566 15.2071L17.4004 24L13.0176 15.2071L10.1754 22.2094H12.6723V24H0.400391Z" fill="#ED9121"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-7"><svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 21.7862V20.1766H2.24219L11.3477 0.213867L17.5 11.4805L23.6523 0.213867L32.7578 20.1766H35V21.7862H22.3945V20.1766H24.9102L21.9844 13.8827L17.5 21.7862L12.9883 13.8827L10.0625 20.1766H12.6328V21.7862H0Z" fill="#76C7C6"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-8"><svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.299805 24V22.2094H2.47793L11.3232 0L17.2998 12.5345L23.2764 0L32.1217 22.2094H34.2998V24H22.0545V22.2094H24.4982L21.6561 15.2071L17.2998 24L12.917 15.2071L10.0748 22.2094H12.5717V24H0.299805Z" fill="#8D5B2D"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-9"><svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.799805 24V22.2094H2.97793L11.8232 0L17.7998 12.5345L23.7764 0L32.6217 22.2094H34.7998V24H22.5545V22.2094H24.9982L22.1561 15.2071L17.7998 24L13.417 15.2071L10.5748 22.2094H13.0717V24H0.799805Z" fill="#99CC00"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-10"><svg width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.7842 0.138839C22.5288 0.226469 22.0482 0.657887 21.5912 1.20954C20.9569 1.97532 20.561 2.71584 19.2783 5.53554C18.4271 7.40671 17.714 8.93754 17.6937 8.93754C17.6734 8.93754 17.053 7.5413 16.315 5.83461C14.8513 2.45011 14.6815 2.1129 14.0126 1.26098C13.1651 0.181757 12.1488 -0.152911 11.1824 0.328753C10.639 0.599717 9.74198 1.66503 9.19545 2.68847C8.50819 3.97555 1.93922 17.7941 1.87468 18.0884C1.81891 18.3432 1.98271 18.3585 4.76159 18.3585H7.70751L10.1825 13.2368C11.5437 10.4198 12.7265 8.02565 12.811 7.91634C12.9347 7.75604 13.2099 8.254 14.2346 10.4924C14.9332 12.0186 15.504 13.353 15.5033 13.4576C15.5024 13.5623 14.8597 14.9602 14.0752 16.564L12.6488 19.48L6.83189 19.5189L1.01498 19.5578L0.507426 20.6404L0 21.7231L5.86692 21.762L11.7338 21.8008L9.84738 25.7131C8.80984 27.8649 7.93184 29.7161 7.89625 29.8267C7.84299 29.9926 8.3548 30.021 10.8057 29.9878L13.7797 29.9477L15.7691 25.8354L17.7584 21.7231L26.3793 21.6483L35 21.5736L30.5345 11.7788C27.537 5.20371 25.8896 1.74354 25.5229 1.2523C24.6738 0.115062 23.8413 -0.223493 22.7842 0.138839ZM27.2332 13.6752L30.0389 19.48L27.2208 19.5202C25.6707 19.5424 23.1334 19.5424 21.5823 19.5202L18.7621 19.48L21.3432 13.9471C24.1973 7.82916 24.2695 7.68201 24.3623 7.79297C24.3982 7.83559 25.69 10.4827 27.2332 13.6752Z" fill="#011E66"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-11"><?xml version="1.0" standalone="no"?>
+        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+        "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="IconChangeColor" height="30" width="30"><title>Moscow Metro</title><path d="M16.603 11.85l-2.481-6.26-2.092 3.66-2.092-3.66-2.481 6.262H6.74v.941h3.736v-.941h-.553l.538-1.555 1.569 2.57 1.569-2.57.538 1.555h-.553v.941h3.751v-.941zm5.335-1.912A9.933 9.933 0 0 0 12 0C6.516 0 2.062 4.453 2.062 9.938c0 2.75 1.121 5.23 2.914 7.023a.804.804 0 0 0 1.375-.568.825.825 0 0 0-.239-.582 8.303 8.303 0 0 1-2.42-5.873c0-4.588 3.72-8.324 8.308-8.324 4.588 0 8.324 3.736 8.324 8.324a8.289 8.289 0 0 1-2.436 5.888l-7.024 7.023L12 24l7.039-7.039a9.891 9.891 0 0 0 2.899-7.023Z" id="mainIconPathAttribute" stroke-width="0" stroke="#ff0000" fill="#ff0000"></path></svg> 
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-12"><svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.6645 23.7408C9.91987 23.7408 5.17509 23.7408 0.430457 23.7408C0.281766 23.7408 0.280991 23.7403 0.32549 23.5289C0.447823 22.9477 0.570931 22.367 0.693264 21.7858C0.852809 21.0279 1.01158 20.2698 1.17097 19.5118C1.32105 18.7993 1.47254 18.0875 1.62169 17.3744C1.75441 16.74 1.8831 16.1037 2.01629 15.4696C2.15568 14.8062 2.29956 14.145 2.43942 13.4818C2.57307 12.8477 2.703 12.2118 2.83634 11.5774C2.95697 11.0036 3.08054 10.4314 3.20132 9.85782C3.29776 9.40012 3.39095 8.94101 3.48754 8.48332C3.65531 7.68836 3.8288 6.89601 3.99207 6.09891C4.10308 5.55737 4.21798 5.01798 4.3324 4.47834C4.50869 3.64609 4.68234 2.81265 4.85693 1.97945C4.98422 1.37189 5.1126 0.764562 5.23695 0.155574C5.2599 0.0434673 5.29525 -0.000236552 5.37417 9.6239e-07C6.35051 0.00356368 7.32685 0.00237843 8.30318 0.00237843C16.8344 0.00237843 25.3655 0.00237843 33.8967 0.00237843C34.0334 0.00237843 34.0296 0.000481315 33.986 0.201419C33.8978 0.609469 33.814 1.01966 33.7288 1.42913C33.5771 2.15735 33.4272 2.88628 33.2737 3.61379C33.109 4.39403 32.9394 5.17165 32.7755 5.95236C32.6188 6.69887 32.4687 7.4487 32.3119 8.19497C32.1953 8.75005 32.0705 9.30085 31.9535 9.85568C31.8094 10.5381 31.6711 11.2235 31.5277 11.9061C31.3613 12.6975 31.1908 13.487 31.0247 14.2787C30.9247 14.7549 30.8323 15.2349 30.732 15.7111C30.6151 16.266 30.492 16.8177 30.374 17.3721C30.2768 17.8293 30.1839 18.2886 30.0876 18.7463C29.9653 19.3275 29.8403 19.9075 29.7188 20.4892C29.586 21.1236 29.4566 21.7597 29.3245 22.3943C29.2407 22.796 29.1527 23.1955 29.071 23.598C29.0488 23.7075 29.0122 23.7429 28.9376 23.7427C27.9123 23.7391 26.8868 23.7403 25.8615 23.7403C22.129 23.7408 18.3967 23.7408 14.6645 23.7408ZM9.14634 13.0322C9.14634 13.8785 9.14634 14.7247 9.14634 15.5712C9.14634 17.0227 9.14634 18.4741 9.14649 19.9254C9.14649 20.0755 9.14975 20.0802 9.24588 20.0807C9.44729 20.0814 9.64885 20.0847 9.85026 20.0802C11.0553 20.0534 12.2611 20.1382 13.4658 20.0353C13.6641 20.0185 13.8592 19.9681 14.0547 19.9225C14.3681 19.8491 14.6726 19.7201 14.9734 19.566C15.5322 19.2796 16.041 18.8535 16.497 18.2858C16.9992 17.6604 17.3977 16.8978 17.7101 16.0318C17.934 15.4109 18.0914 14.7494 18.2035 14.0604C18.2802 13.5892 18.3346 13.1108 18.3581 12.6306C18.3778 12.2275 18.383 11.8197 18.3745 11.4119C18.3636 10.8872 18.3348 10.3687 18.2782 9.85093C18.2266 9.37827 18.1483 8.91726 18.0441 8.46812C17.9094 7.88715 17.7323 7.33589 17.5143 6.8143C17.2758 6.24427 16.9884 5.74073 16.668 5.27877C16.4418 4.95266 16.1914 4.67501 15.9263 4.42728C15.5723 4.09642 15.1965 3.8418 14.7999 3.65773C14.5563 3.54467 14.3101 3.45062 14.0587 3.38554C13.7713 3.31096 13.4818 3.2428 13.1915 3.24113C11.4635 3.23044 9.73568 3.23448 8.00766 3.23353C7.87773 3.23353 7.87355 3.23163 7.83758 3.42188C7.76114 3.8266 7.68764 4.23252 7.61648 4.63938C7.54779 5.03128 7.48453 5.42532 7.41662 5.81745C7.38902 5.97659 7.39119 5.98632 7.49864 5.98656C8.00224 5.9868 8.50599 5.98656 9.00958 5.9868C9.14634 5.9868 9.14634 5.98704 9.14634 6.19843C9.14634 8.47643 9.14634 10.7544 9.14634 13.0322ZM23.8711 10.2108C23.8711 7.94867 23.8711 5.68682 23.8711 3.42473C23.8711 3.23662 23.871 3.23638 23.7465 3.23638C22.4809 3.23638 21.2153 3.23638 19.9498 3.23638C19.8428 3.23638 19.8423 3.23709 19.8423 3.40122C19.8422 4.23561 19.8422 5.06999 19.8423 5.90438C19.8423 6.07611 19.8426 6.07658 19.9524 6.07658C20.5697 6.07682 21.1871 6.07658 21.8043 6.07682C21.9149 6.07682 21.9175 6.08062 21.9175 6.24902C21.9177 9.86755 21.9177 13.4859 21.9175 17.1044C21.9175 17.2737 21.9113 17.2825 21.7975 17.2825C21.1389 17.2828 20.4802 17.2825 19.8217 17.2828C19.7003 17.2828 19.7 17.283 19.7 17.464C19.6998 18.0651 19.7 18.6663 19.7 19.2672C19.7 19.5045 19.7016 19.7418 19.6994 19.979C19.6986 20.0695 19.7205 20.1132 19.7808 20.1061C19.7961 20.1042 19.8118 20.1061 19.8273 20.1061C21.7204 20.1061 23.6137 20.1061 25.5069 20.1061C25.525 20.1061 25.543 20.1052 25.5611 20.1056C25.6111 20.1073 25.6388 20.0752 25.6579 19.9992C25.7194 19.7524 25.787 19.509 25.8528 19.2646C26.0205 18.6409 26.1875 18.0165 26.3578 17.3942C26.3832 17.3015 26.3637 17.2804 26.3086 17.283C26.2854 17.2842 26.2621 17.283 26.2389 17.283C25.5002 17.283 24.7616 17.283 24.0227 17.283C23.9017 17.283 23.8772 17.2462 23.8719 17.0562C23.8708 17.0168 23.8716 16.9771 23.8716 16.9377C23.8711 14.6953 23.8711 12.4529 23.8711 10.2108Z" fill="#F6A602"/>
+<path d="M11.1436 11.6694C11.1436 9.85436 11.1436 8.03927 11.1436 6.22418C11.1436 6.0318 11.1437 6.03156 11.2667 6.03156C11.7755 6.03156 12.2842 6.02776 12.7931 6.03322C13.1627 6.03702 13.5245 6.12087 13.8806 6.28119C14.233 6.43985 14.5621 6.66739 14.8641 6.98423C15.1615 7.29609 15.4345 7.65189 15.6466 8.10293C15.8824 8.60432 16.042 9.15821 16.1431 9.75864C16.26 10.4529 16.2972 11.1569 16.2882 11.8685C16.2828 12.3022 16.2578 12.7335 16.2056 13.1625C16.1423 13.6812 16.046 14.1797 15.8925 14.6526C15.6764 15.3184 15.3621 15.8528 14.9683 16.2815C14.6914 16.5829 14.394 16.8242 14.072 16.9936C13.9135 17.077 13.751 17.1335 13.5884 17.1933C13.111 17.3691 12.626 17.3273 12.1425 17.3306C11.8455 17.3328 11.5485 17.3313 11.2515 17.3309C11.1473 17.3306 11.1437 17.3249 11.1437 17.1622C11.1436 15.3315 11.1436 13.5005 11.1436 11.6694Z" fill="#F6A602"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-13"><svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.2027 5.87335e-05C24.9522 5.87335e-05 29.7015 5.87335e-05 34.451 5.87335e-05C34.4743 5.87335e-05 34.4976 0.000534411 34.5209 5.87335e-05C34.5591 -0.000892623 34.5663 0.00909499 34.5521 0.0756899C34.4046 0.770655 34.262 1.46824 34.1162 2.16416C34.0105 2.66885 33.9013 3.17188 33.7943 3.67586C33.6792 4.21742 33.5634 4.75874 33.4502 5.30149C33.3403 5.82901 33.235 6.35892 33.1244 6.88621C33.0287 7.34239 32.9266 7.79523 32.8309 8.25141C32.7203 8.77822 32.6196 9.30979 32.5028 9.83327C32.4397 10.1158 32.3807 10.4003 32.3194 10.6835C32.2177 11.1533 32.1242 11.6273 32.0254 12.0987C31.9458 12.4797 31.8593 12.8574 31.7835 13.2401C31.7061 13.6313 31.6197 14.0183 31.5395 14.4081C31.4464 14.8612 31.3477 15.3124 31.2518 15.7643C31.1393 16.2942 31.0369 16.8293 30.9207 17.3573C30.8584 17.6403 30.7993 17.9248 30.7373 18.2078C30.6763 18.4866 30.6171 18.7663 30.5583 19.0462C30.4797 19.4203 30.4025 19.7949 30.3241 20.169C30.2071 20.7263 30.0897 21.2833 29.9725 21.8403C29.8686 22.3339 29.7624 22.8259 29.6625 23.3214C29.6393 23.4372 29.608 23.5492 29.5905 23.6674C29.5826 23.7205 29.5641 23.7409 29.5316 23.7416C29.5083 23.7421 29.4851 23.7421 29.4618 23.7421C19.9578 23.7421 10.4537 23.7421 0.949673 23.7421C0.931504 23.7421 0.91349 23.7411 0.895322 23.7423C0.852772 23.745 0.834915 23.735 0.852307 23.6546C0.976072 23.0797 1.09611 22.5027 1.21708 21.9264C1.32066 21.4329 1.42392 20.9389 1.52735 20.4454C1.62999 19.9557 1.73295 19.4657 1.83575 18.976C1.92908 18.5318 2.0252 18.0887 2.11542 17.643C2.18593 17.294 2.25876 16.9463 2.33267 16.5993C2.42243 16.1774 2.51312 15.7557 2.60117 15.3328C2.7181 14.7713 2.83643 14.2105 2.95336 13.6489C3.05756 13.1478 3.16487 12.6476 3.27046 12.147C3.3832 11.6123 3.49625 11.0776 3.60589 10.5413C3.69626 10.0992 3.79456 9.6606 3.88649 9.21893C3.99954 8.67618 4.11259 8.13368 4.22657 7.59164C4.32394 7.12857 4.42146 6.66525 4.52193 6.20337C4.64818 5.62233 4.77086 5.03939 4.89245 4.45573C4.9923 3.97649 5.0819 3.49224 5.18797 3.01657C5.26002 2.69358 5.32478 2.36727 5.39574 2.04405C5.47836 1.66778 5.5546 1.28843 5.63302 0.910031C5.69188 0.625813 5.76191 0.346587 5.80788 0.0561855C5.8144 0.0148015 5.83661 0.00267055 5.8613 0.00148135C5.88972 5.43205e-05 5.91813 0.000534876 5.94671 0.000534876C10.6987 5.9198e-05 15.4507 5.87335e-05 20.2027 5.87335e-05ZM9.0118 13.0681C9.0118 15.3611 9.0118 17.6541 9.01195 19.9471C9.01195 20.141 9.01614 20.1467 9.14317 20.1467C10.2142 20.1467 11.2852 20.1503 12.3562 20.1443C12.6188 20.1429 12.881 20.1624 13.1446 20.111C13.3481 20.0715 13.5554 20.0779 13.7605 20.0316C13.9512 19.9885 14.1405 19.9376 14.3278 19.8717C14.6412 19.7616 14.9455 19.6082 15.2429 19.4177C15.6932 19.1292 16.1048 18.7458 16.4789 18.2694C16.8276 17.8254 17.1225 17.3066 17.3803 16.7342C17.596 16.2549 17.774 15.7476 17.9156 15.2096C18.005 14.87 18.0802 14.5239 18.1356 14.1657C18.1744 13.9143 18.2192 13.6637 18.2462 13.4097C18.2828 13.0638 18.3102 12.714 18.3234 12.3644C18.347 11.7365 18.338 11.1071 18.2926 10.4819C18.2609 10.0452 18.2114 9.6128 18.1358 9.18564C18.0867 8.90856 18.0379 8.63171 17.9735 8.36319C17.8589 7.88608 17.716 7.4292 17.5427 6.99348C17.169 6.05378 16.6986 5.25654 16.1069 4.62507C15.6828 4.17271 15.2227 3.84068 14.7328 3.6007C14.3874 3.4316 14.032 3.32362 13.6736 3.25132C13.4105 3.19828 13.1446 3.16664 12.8785 3.16569C12.3792 3.16355 11.88 3.16356 11.3806 3.16356C10.2656 3.16332 9.15062 3.16403 8.03565 3.16213C7.96499 3.16189 7.92229 3.18092 7.90428 3.30531C7.86142 3.60046 7.80738 3.89182 7.75737 4.18436C7.70364 4.4995 7.64883 4.81392 7.59556 5.12929C7.55503 5.36903 7.51963 5.61116 7.47506 5.84923C7.4454 6.00763 7.45161 6.0326 7.55767 6.03284C8.00257 6.03332 8.44763 6.03308 8.89253 6.03308C9.01195 6.03308 9.01211 6.03332 9.01211 6.21313C9.0118 8.49805 9.0118 10.7832 9.0118 13.0681ZM23.1392 17.2384C23.1603 17.1942 23.1676 17.1732 23.1782 17.1575C23.6054 16.5161 24.0324 15.8749 24.4602 15.2346C24.7758 14.7622 25.0905 14.2885 25.3955 13.8C25.5879 13.4917 25.7754 13.1761 25.9636 12.8617C26.2563 12.3722 26.5288 11.8568 26.7793 11.3155C26.9809 10.88 27.1363 10.4038 27.2564 9.90343C27.3387 9.56023 27.3984 9.20561 27.4365 8.8441C27.4708 8.51802 27.4529 8.18862 27.4606 7.86064C27.473 7.32645 27.3958 6.81866 27.2745 6.32491C27.1348 5.75576 26.9267 5.25011 26.6698 4.78419C26.3707 4.24168 26.0213 3.80477 25.6045 3.49677C25.3354 3.29793 25.0523 3.16332 24.7599 3.06319C24.4966 2.97305 24.2304 2.93428 23.9638 2.91216C23.7322 2.89313 23.4998 2.90027 23.2667 2.93095C22.9915 2.96734 22.7201 3.03012 22.4531 3.1293C22.1078 3.25774 21.774 3.44421 21.4577 3.69322C21.0886 3.98386 20.7324 4.30827 20.3991 4.68929C20.1548 4.96851 19.9273 5.27628 19.7238 5.62519C19.684 5.69345 19.6832 5.74268 19.7244 5.80547C20.1314 6.42623 20.5383 7.04747 20.9437 7.6706C20.9891 7.74029 21.0255 7.73791 21.0676 7.67013C21.103 7.61329 21.1392 7.55692 21.1776 7.50483C21.4953 7.07387 21.8466 6.72067 22.2202 6.41196C22.601 6.0973 23.0033 5.88871 23.431 5.82925C23.7611 5.78335 24.0928 5.80952 24.4112 6.00074C24.9584 6.32943 25.2947 6.92165 25.3778 7.81664C25.4112 8.17577 25.3851 8.54109 25.3146 8.89214C25.2202 9.3633 25.0728 9.79498 24.8845 10.1934C24.7093 10.5639 24.5206 10.9176 24.324 11.2622C24.0813 11.6877 23.8333 12.1056 23.5783 12.5135C23.2749 12.9987 22.9649 13.4739 22.652 13.945C22.0338 14.8755 21.4198 15.8123 20.8035 16.7456C20.6072 17.0429 20.4091 17.3369 20.2128 17.6342C20.1764 17.6891 20.1485 17.7469 20.1488 17.8387C20.1517 18.5634 20.1514 19.2881 20.1491 20.0128C20.1488 20.1165 20.1702 20.1607 20.2382 20.1479C20.2561 20.1445 20.2744 20.1474 20.2926 20.1474C22.6208 20.1474 24.9491 20.1474 27.2775 20.1474C27.2981 20.1474 27.3189 20.1453 27.3396 20.1476C27.3915 20.1533 27.4205 20.1158 27.4379 20.0425C27.5207 19.6915 27.6048 19.3411 27.6887 18.9908C27.7797 18.611 27.871 18.2316 27.9618 17.8518C28.0007 17.6891 28.0396 17.5267 28.0767 17.363C28.0958 17.2791 28.0861 17.2215 28.0154 17.2305C27.9898 17.2339 27.9637 17.231 27.9378 17.231C26.3804 17.2336 24.8231 17.2365 23.2657 17.2391C23.23 17.2386 23.1943 17.2384 23.1392 17.2384Z" fill="#E74182"/>
+<path d="M11.0983 11.6945C11.0983 9.87712 11.0983 8.05979 11.0983 6.24223C11.0983 6.07313 11.0984 6.07265 11.209 6.07265C11.6823 6.07241 12.1556 6.0786 12.629 6.07075C13.0282 6.06409 13.4205 6.13353 13.804 6.29907C14.2909 6.50932 14.7302 6.85681 15.1078 7.37958C15.3467 7.71017 15.5605 8.07121 15.7236 8.49837C15.8366 8.79448 15.9248 9.10795 15.9938 9.43403C16.0627 9.7601 16.1011 10.0959 16.1411 10.433C16.2177 11.077 16.206 11.7249 16.1871 12.3697C16.1744 12.8033 16.1265 13.2392 16.0498 13.6607C15.9257 14.3425 15.7315 14.9747 15.4265 15.5141C15.2384 15.8469 15.0165 16.1221 14.7769 16.3666C14.5639 16.5842 14.3362 16.7561 14.1 16.901C13.9287 17.0061 13.7501 17.0803 13.5691 17.1393C12.7745 17.3988 11.9688 17.2739 11.1677 17.3058C11.0955 17.3086 11.0977 17.2466 11.0977 17.1697C11.0983 15.6968 11.0981 14.2239 11.0981 12.7509C11.0983 12.3994 11.0983 12.0469 11.0983 11.6945Z" fill="#E74182"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-14"><svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.0996094 24V22.2094H2.27773L11.123 0L17.0996 12.5345L23.0762 0L31.9215 22.2094H34.0996V24H21.8543V22.2094H24.298L21.4559 15.2071L17.0996 24L12.7168 15.2071L9.87461 22.2094H12.3715V24H0.0996094Z" fill="#DE64A1"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-15"><svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.700195 24V22.2094H2.87832L11.7236 0L17.7002 12.5345L23.6768 0L32.5221 22.2094H34.7002V24H22.4549V22.2094H24.8986L22.0564 15.2071L17.7002 24L13.3174 15.2071L10.4752 22.2094H12.9721V24H0.700195Z" fill="#A5A5A5"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-16"><svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 24V22.2094H2.17813L11.0234 0L17 12.5345L22.9766 0L31.8219 22.2094H34V24H21.7547V22.2094H24.1984L21.3563 15.2071L17 24L12.6172 15.2071L9.775 22.2094H12.2719V24H0Z" fill="#EF161E"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-17"><svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.5 24V22.2094H2.67813L11.5234 0L17.5 12.5345L23.4766 0L32.3219 22.2094H34.5V24H22.2547V22.2094H24.6984L21.8563 15.2071L17.5 24L13.1172 15.2071L10.275 22.2094H12.7719V24H0.5Z" fill="#800080"/>
+</svg>
+
+                  </button>
+                </li>
+                <li class="metro__item">
+                  <button class="metro__btn" type="button" data-tab="tub-18"><svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 21.7862V20.1766H2.24219L11.3477 0.213867L17.5 11.4805L23.6523 0.213867L32.7578 20.1766H35V21.7862H22.3945V20.1766H24.9102L21.9844 13.8827L17.5 21.7862L12.9883 13.8827L10.0625 20.1766H12.6328V21.7862H0Z" fill="#0DC1F9"/>
+</svg>
+
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="metro__tab-panel"> 
+              <div class="metro__tab-item metro__tab-item--active" id="tub-1">
+                <div class="metro__tab-title">Арбатско-Покровская линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">А</div>
+                    <div class="metro__links"><a href="#">Арбатская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Бауманская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">В</div>
+                    <div class="metro__links"><a href="#">Волоколамская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">И</div>
+                    <div class="metro__links"><a href="#">Измайловская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Киевская</a><a href="#">Курская</a><a href="#">Крылатское</a><a href="#">Кунцевская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">М</div>
+                    <div class="metro__links"><a href="#">Митино</a><a href="#">Молодёжная</a><a href="#">Мякинино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Парк Победы</a><a href="#">Партизанская</a><a href="#">Первомайская</a><a href="#">Площадь Революции</a><a href="#">Пятницкое Шоссе</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Семёновская</a><a href="#">Славянский бульвар</a><a href="#">Смоленская</a><a href="#">Строгино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Щ</div>
+                    <div class="metro__links"><a href="#">Щёлковская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Э</div>
+                    <div class="metro__links"><a href="#">Элктрозаводская</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-2">
+                <div class="metro__tab-title">Большая кольцевая линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">Д</div>
+                    <div class="metro__links"><a href="#">Деловой центр</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Петровский парк</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Савёловская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Х</div>
+                    <div class="metro__links"><a href="#">Хорошёвская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ц</div>
+                    <div class="metro__links"><a href="#">ЦСКА</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ш</div>
+                    <div class="metro__links"><a href="#">Шелепиха</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-3">
+                <div class="metro__tab-title">Бутовская линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Битцевский парк</a><a href="#">Бульвар адмирала Ушакова</a><a href="#">Бунинская Аллея</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Л</div>
+                    <div class="metro__links"><a href="#">Лесопарковая</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">У</div>
+                    <div class="metro__links"><a href="#">Улица Горчакова</a><a href="#">Улица Скобелевская</a><a href="#">Улица Старокачаловская</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-4">
+                <div class="metro__tab-title">Замоскворецкая линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">А</div>
+                    <div class="metro__links"><a href="#">Автозаводская</a><a href="#">Алма-Атинская</a><a href="#">Аэропорт</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Белорусская</a><a href="#">Беломорская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">В</div>
+                    <div class="metro__links"><a href="#">Водный стадион</a><a href="#">Войковская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Д</div>
+                    <div class="metro__links"><a href="#">Динамо</a><a href="#">Домодедовская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Кантемировская</a><a href="#">Каширская</a><a href="#">Коломенская</a><a href="#">Красногвардейская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">М</div>
+                    <div class="metro__links"><a href="#">Маяковская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Н</div>
+                    <div class="metro__links"><a href="#">Новокузнецкая</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">О</div>
+                    <div class="metro__links"><a href="#">Орехово</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Павелецкая</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Р</div>
+                    <div class="metro__links"><a href="#">Речной вокзал</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Сокол</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Т</div>
+                    <div class="metro__links"><a href="#">Тверская</a><a href="#">Театральная</a><a href="#">Технопарк</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Х</div>
+                    <div class="metro__links"><a href="#">Ховрино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ц</div>
+                    <div class="metro__links"><a href="#">Царицыно</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-5">
+                <div class="metro__tab-title">Колининско-Солнцевкая линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">А</div>
+                    <div class="metro__links"><a href="#">Авиамоторная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Боровское шоссе</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Г</div>
+                    <div class="metro__links"><a href="#">Говорово</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Л</div>
+                    <div class="metro__links"><a href="#">Ломоносовский проспект</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">М</div>
+                    <div class="metro__links"><a href="#">Марксистская</a><a href="#">Минская</a><a href="#">Мичуринский проспект</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Н</div>
+                    <div class="metro__links"><a href="#">Новогиреево</a><a href="#">Новокосино</a><a href="#">Новопеределкино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">О</div>
+                    <div class="metro__links"><a href="#">Озерная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Парк Победы</a><a href="#">Перово</a><a href="#">Петровский парк</a><a href="#">Площадь Ильича</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Р</div>
+                    <div class="metro__links"><a href="#">Раменки</a><a href="#">Рассказовка</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Солнцево</a><a href="#">Савеловкая</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Т</div>
+                    <div class="metro__links"><a href="#">Третьяковская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Х</div>
+                    <div class="metro__links"><a href="#">Хорошёвская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ц</div>
+                    <div class="metro__links"><a href="#">ЦСКА</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ш</div>
+                    <div class="metro__links"><a href="#">Шоссе Энтузиастов</a><a href="#">Шелепиха</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-6">
+                <div class="metro__tab-title">Калужско-Рижская линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">А</div>
+                    <div class="metro__links"><a href="#">Академическая</a><a href="#">Алексеевская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Бабушкинская</a><a href="#">Беляево</a><a href="#">Ботанический сад</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">В</div>
+                    <div class="metro__links"><a href="#">ВДНХ</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Калужская</a><a href="#">Китай-город</a><a href="#">Коньково</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Л</div>
+                    <div class="metro__links"><a href="#">Ленинский проспект</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">М</div>
+                    <div class="metro__links"><a href="#">Медведково</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Н</div>
+                    <div class="metro__links"><a href="#">Новоясеневская</a><a href="#">Новые Черёмушки</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">О</div>
+                    <div class="metro__links"><a href="#">Октябрьская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Проспект Мира</a><a href="#">Профсоюзная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Р</div>
+                    <div class="metro__links"><a href="#">Рижская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Свиблово</a><a href="#">Сухаревская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Т</div>
+                    <div class="metro__links"><a href="#">Третьяковская</a><a href="#">Тёплый стан</a><a href="#">Тургеневская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ш</div>
+                    <div class="metro__links"><a href="#">Шаболовская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Я</div>
+                    <div class="metro__links"><a href="#">Ясенево</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-7">
+                <div class="metro__tab-title">Каховская линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">В</div>
+                    <div class="metro__links"><a href="#">Варшавская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Каширская</a><a href="#">Каховская</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-8">
+                <div class="metro__tab-title">Кольцевая линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Белорусская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Д</div>
+                    <div class="metro__links"><a href="#">Добрынинская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Киевская</a><a href="#">Комсомольская</a><a href="#">Краснопресненская</a><a href="#">Курская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Н</div>
+                    <div class="metro__links"><a href="#">Новослободская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">О</div>
+                    <div class="metro__links"><a href="#">Октябрьская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Павелецкая</a><a href="#">Парк Культуры</a><a href="#">Проспект Мира</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Т</div>
+                    <div class="metro__links"><a href="#">Таганская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">У</div>
+                    <div class="metro__links"><a href="#">Улица Новаторов</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-9">
+                <div class="metro__tab-title">Люблинско-Дмитровская линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Борисово</a><a href="#">Братиславская</a><a href="#">Бутырская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">В</div>
+                    <div class="metro__links"><a href="#">Верхние Лихоборы</a><a href="#">Волжская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Д</div>
+                    <div class="metro__links"><a href="#">Достоевская</a><a href="#">Дубровка</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">З</div>
+                    <div class="metro__links"><a href="#">Зябликово</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Кожуховская</a><a href="#">Крестьянская застава</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Л</div>
+                    <div class="metro__links"><a href="#">Люблино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">М</div>
+                    <div class="metro__links"><a href="#">Марьина роща</a><a href="#">Марьино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">О</div>
+                    <div class="metro__links"><a href="#">Окружная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Петровско-Разумовская</a><a href="#">Печатники</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Р</div>
+                    <div class="metro__links"><a href="#">Римская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Селигерская</a><a href="#">Сретенский бульвар</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Т</div>
+                    <div class="metro__links"><a href="#">Трубная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ф</div>
+                    <div class="metro__links"><a href="#">Фонвизинская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ч</div>
+                    <div class="metro__links"><a href="#">Чкаловская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ш</div>
+                    <div class="metro__links"><a href="#">Шипиловская</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-10">
+                <div class="metro__tab-title">Московская монорельсовая транспортная система</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">В</div>
+                    <div class="metro__links"><a href="#">Выставочный центр</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Т</div>
+                    <div class="metro__links"><a href="#">Тимирязевская</a><a href="#">Телецентр</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">У</div>
+                    <div class="metro__links"><a href="#">Улица Милашенкова</a><a href="#">Улица Сергея Эйзенштейна</a><a href="#">Улица Академика Королёва</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-11">
+                <div class="metro__tab-title">Москосвкое центральное кольцо</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">А</div>
+                    <div class="metro__links"><a href="#">Автозаводская</a><a href="#">Андроновка</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Бульвар Рокоссовского</a><a href="#">Ботанический сад</a><a href="#">Балтийская</a><a href="#">Белокаменная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">В</div>
+                    <div class="metro__links"><a href="#">Владыкино</a><a href="#">Верхние Котлы</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Д</div>
+                    <div class="metro__links"><a href="#">Дубровка</a><a href="#">Деловой центр</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">З</div>
+                    <div class="metro__links"><a href="#">ЗИЛ</a><a href="#">Зорге</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">И</div>
+                    <div class="metro__links"><a href="#">Измайлово</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Кутузовская</a><a href="#">Коптево</a><a href="#">Крымская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Л</div>
+                    <div class="metro__links"><a href="#">Лихоборы</a><a href="#">Локомотив</a><a href="#">Лужники</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Н</div>
+                    <div class="metro__links"><a href="#">Нижегородская</a><a href="#">Новохохловская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">О</div>
+                    <div class="metro__links"><a href="#">Окружная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Панфиловская</a><a href="#">Площадь Гагарина</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Р</div>
+                    <div class="metro__links"><a href="#">Ростокино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Соколиная Гора</a><a href="#">Стрешнево</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">У</div>
+                    <div class="metro__links"><a href="#">Угрешская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Х</div>
+                    <div class="metro__links"><a href="#">Хорошёво</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ш</div>
+                    <div class="metro__links"><a href="#">Шоссе Энтузиастов</a><a href="#">Шелепиха</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-12">
+                <div class="metro__tab-title">МЦД-1 Лобня-Одинцово</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Белорусская</a><a href="#">Беговая</a><a href="#">Баковка</a><a href="#">Бескудниково</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">В</div>
+                    <div class="metro__links"><a href="#">Водники</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Д</div>
+                    <div class="metro__links"><a href="#">Дегунино</a><a href="#">Долгопрудная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Кунцевская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Л</div>
+                    <div class="metro__links"><a href="#">Лианозово</a><a href="#">Лобня</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">М</div>
+                    <div class="metro__links"><a href="#">Марк</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Н</div>
+                    <div class="metro__links"><a href="#">Немчиновка</a><a href="#">Новодачная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">О</div>
+                    <div class="metro__links"><a href="#">Окружная</a><a href="#">Одинцово</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Р</div>
+                    <div class="metro__links"><a href="#">Рабочий Посёлок</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Савеловкая</a><a href="#">Славянский бульвар</a><a href="#">Сетунь</a><a href="#">Сколково</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Т</div>
+                    <div class="metro__links"><a href="#">Темирязевская</a><a href="#">Тестовская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ф</div>
+                    <div class="metro__links"><a href="#">Фили</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Х</div>
+                    <div class="metro__links"><a href="#">Хлебниково</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ш</div>
+                    <div class="metro__links"><a href="#">Шереметьевская</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-13">
+                <div class="metro__tab-title">МЦД-2 Нахабино-Подольск</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">А</div>
+                    <div class="metro__links"><a href="#">Аникеевка</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Битца</a><a href="#">Бутово</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">В</div>
+                    <div class="metro__links"><a href="#">Волоколамская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Г</div>
+                    <div class="metro__links"><a href="#">Гражданская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Д</div>
+                    <div class="metro__links"><a href="#">Дмитровская</a><a href="#">Депо</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Курская</a><a href="#">Каланчёвская</a><a href="#">Калитники</a><a href="#">Красногорская</a><a href="#">Красный Балтиец</a><a href="#">Красный Строитель</a><a href="#">Кубанская</a><a href="#">Курьяново</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">М</div>
+                    <div class="metro__links"><a href="#">Москва-Товарная</a><a href="#">Москворечье</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Н</div>
+                    <div class="metro__links"><a href="#">Новохохловская</a><a href="#">Нахабино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">О</div>
+                    <div class="metro__links"><a href="#">Опалиха</a><a href="#">Остафьево</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Павшего</a><a href="#">Пенягино</a><a href="#">Перерва</a><a href="#">Подольск</a><a href="#">Покровское</a><a href="#">Покровское-Стрешнево</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Р</div>
+                    <div class="metro__links"><a href="#">Рижская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Стрешнево</a><a href="#">Силикатная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Т</div>
+                    <div class="metro__links"><a href="#">Текстильщики</a><a href="#">Тушинская</a><a href="#">Трикотажная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ц</div>
+                    <div class="metro__links"><a href="#">Царицыно</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Щ</div>
+                    <div class="metro__links"><a href="#">Щербинка</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-14">
+                <div class="metro__tab-title">Некрасовская линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">А</div>
+                    <div class="metro__links"><a href="#">Авиамоторная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Косино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Л</div>
+                    <div class="metro__links"><a href="#">Лефортово</a><a href="#">Лухмановская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Н</div>
+                    <div class="metro__links"><a href="#">Некрасовка</a><a href="#">Нижегородская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">О</div>
+                    <div class="metro__links"><a href="#">Окская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Стахановская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">М</div>
+                    <div class="metro__links"><a href="#">Улица Дмитриевского</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Э</div>
+                    <div class="metro__links"><a href="#">Электрозаводская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ю</div>
+                    <div class="metro__links"><a href="#">Юго-Восточная</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-15">
+                <div class="metro__tab-title">Серпуховско-Тимирязевская линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">А</div>
+                    <div class="metro__links"><a href="#">Алтуфьево</a><a href="#">Аннино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Бибирево</a><a href="#">Боровицкая</a><a href="#">Бульвар Дмитрия Донского</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">В</div>
+                    <div class="metro__links"><a href="#">Владыкино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Д</div>
+                    <div class="metro__links"><a href="#">Дмитровская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">М</div>
+                    <div class="metro__links"><a href="#">Менделеевская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Н</div>
+                    <div class="metro__links"><a href="#">Нагатинская</a><a href="#">Нагорная</a><a href="#">Нахимовский Проспект</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">О</div>
+                    <div class="metro__links"><a href="#">Отрадное</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Петровско-Разумовская</a><a href="#">Полянка</a><a href="#">Пражская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Савеловская</a><a href="#">Севастопольская</a><a href="#">Серпуховская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Т</div>
+                    <div class="metro__links"><a href="#">Темирязевская</a><a href="#">Тульская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">У</div>
+                    <div class="metro__links"><a href="#">Улица академика Янгеля</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ц</div>
+                    <div class="metro__links"><a href="#">Цветной бульвар</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ч</div>
+                    <div class="metro__links"><a href="#">Чертановская</a><a href="#">Чеховская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ю</div>
+                    <div class="metro__links"><a href="#">Южная</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-16">
+                <div class="metro__tab-title">Сокольническая линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Бульвар Рокоссовского</a><a href="#">Библиотека имени Ленина</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Воробьёвы горы</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Комсомольская</a><a href="#">Красносельская</a><a href="#">Красные ворота</a><a href="#">Кропоткинская</a><a href="#">Коммунарка</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Л</div>
+                    <div class="metro__links"><a href="#">Лубянка</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">О</div>
+                    <div class="metro__links"><a href="#">Охотный ряд</a><a href="#">Ольховая</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Парк Культуры</a><a href="#">Преображенская площадь</a><a href="#">Проспект Вернадского</a><a href="#">Прошкино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Р</div>
+                    <div class="metro__links"><a href="#">Румянцево</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Сокольники</a><a href="#">Спортивная</a><a href="#">Саларьево</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Т</div>
+                    <div class="metro__links"><a href="#">Тропарёво</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">У</div>
+                    <div class="metro__links"><a href="#">Университет</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ф</div>
+                    <div class="metro__links"><a href="#">Фрунзенская</a><a href="#">Филатов Луг</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ч</div>
+                    <div class="metro__links"><a href="#">Черкизовская</a><a href="#">Чистые пруды</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ю</div>
+                    <div class="metro__links"><a href="#">Юго-Западная</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-17">
+                <div class="metro__tab-title">Таганско-Краснопресненская линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Баррикадная</a><a href="#">Беговая</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">В</div>
+                    <div class="metro__links"><a href="#">Волгоградский проспект</a><a href="#">Выхино </a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ж</div>
+                    <div class="metro__links"><a href="#">Жулебино</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Китай-Город</a><a href="#">Котельники</a><a href="#">Кузнецкий мост</a><a href="#">Кузминки</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Л</div>
+                    <div class="metro__links"><a href="#">Лермонтовский проспект</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">О</div>
+                    <div class="metro__links"><a href="#">Октябрьское поле</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Планерная</a><a href="#">Полежаевская</a><a href="#">Пролетарская</a><a href="#">Пушкинская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Р</div>
+                    <div class="metro__links"><a href="#">Рязанский проспект</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Спартак</a><a href="#">Сходненская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Т</div>
+                    <div class="metro__links"><a href="#">Таганская</a><a href="#">Текстильщики</a><a href="#">Тушинская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">У</div>
+                    <div class="metro__links"><a href="#">Улица 1905 года</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Щ</div>
+                    <div class="metro__links"><a href="#">Щукинская</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="metro__tab-item" id="tub-18">
+                <div class="metro__tab-title">Филёвская линия</div>
+                <div class="metro__groups">
+                  <div class="metro__group">
+                    <div class="metro__group-item">А</div>
+                    <div class="metro__links"><a href="#">Арбатская</a><a href="#">Александровский сад</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Б</div>
+                    <div class="metro__links"><a href="#">Багратионовская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">В</div>
+                    <div class="metro__links"><a href="#">Выставочная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">К</div>
+                    <div class="metro__links"><a href="#">Киевская</a><a href="#">Кунцевская</a><a href="#">Кутузовская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">М</div>
+                    <div class="metro__links"><a href="#">Международная</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">П</div>
+                    <div class="metro__links"><a href="#">Пионерская</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">С</div>
+                    <div class="metro__links"><a href="#">Смоленская</a><a href="#">Студенческая</a></div>
+                  </div>
+                  <div class="metro__group">
+                    <div class="metro__group-item">Ф</div>
+                    <div class="metro__links"><a href="#">Филевский парк</a><a href="#">Фили             </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
