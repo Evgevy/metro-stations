@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Метро</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Районы </title><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
@@ -15,6 +15,626 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
+      <section class="districts">
+        <div class="districts__container"> 
+          <h3 class="districts__title">Районы обслуживания</h3>
+          <div class="districts__tabs-default">
+            <div class="districts__universal-tab">
+              <ul class="districts__tabs">
+                <li class="districts__item">
+                  <button class="districts__btn districts__btn--active" type="button" data-tab="tab-1">ЮАО</button>
+                </li>
+                <li class="districts__item">
+                  <button class="districts__btn" type="button" data-tab="tab-2">ВАО</button>
+                </li>
+                <li class="districts__item"> 
+                  <button class="districts__btn" type="button" data-tab="tab-3">ЮЗАО</button>
+                </li>
+                <li class="districts__item"> 
+                  <button class="districts__btn" type="button" data-tab="tab-4">СВАО</button>
+                </li>
+                <li class="districts__item"> 
+                  <button class="districts__btn" type="button" data-tab="tab-5">Московская область</button>
+                </li>
+                <li class="districts__item"> 
+                  <button class="districts__btn" type="button" data-tab="tab-6">ЮВАО</button>
+                </li>
+                <li class="districts__item"> 
+                  <button class="districts__btn" type="button" data-tab="tab-7">ЗАО</button>
+                </li>
+                <li class="districts__item"> 
+                  <button class="districts__btn" type="button" data-tab="tab-8">САО</button>
+                </li>
+                <li class="districts__item"> 
+                  <button class="districts__btn" type="button" data-tab="tab-9">НАО</button>
+                </li>
+                <li class="districts__item"> 
+                  <button class="districts__btn" type="button" data-tab="tab-10">ЗЕЛАО</button>
+                </li>
+                <li class="districts__item"> 
+                  <button class="districts__btn" type="button" data-tab="tab-11">ТАО</button>
+                </li>
+                <li class="districts__item"> 
+                  <button class="districts__btn" type="button" data-tab="tab-12">СЗАО</button>
+                </li>
+                <li class="districts__item"> 
+                  <button class="districts__btn" type="button" data-tab="tab-13">ЦАО</button>
+                </li>
+              </ul>
+            </div>
+            <div class="districts__tab-panel"> 
+              <div class="districts__tab-item districts__tab-item--active" id="tab-1"><a class="districts__tab-title" href="/yuao/">ЮАО</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Б</div>
+                    <div class="districts__links"><a href="/biryulyovo-vostochnoe/">Бирюлёво Восточное</a><a href="/biryulyovo-zapadnoe/">Бирюлёво Западное</a><a href="/brateevo/">Братеево</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Д </div>
+                    <div class="districts__links"><a href="/danilovskij/">Даниловский</a><a href="/donskoj/">Донской</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">З</div>
+                    <div class="districts__links"><a href="/zyablikovo/">Зябликово</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">М</div>
+                    <div class="districts__links"><a href="/moskvoreche-saburovo/">Москворечье-Сабурово </a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Н</div>
+                    <div class="districts__links"><a href="/nagatino-sadovniki/">Нагатино-Садовники </a><a href="/nagatinskij-zaton/">Нагатинский Затон</a><a href="/nagornyj/">Нагорный</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">О</div>
+                    <div class="districts__links"><a href="/orekhovo-borisovo-severnoe/">Орехово-Борисово Северное</a><a href="/orekhovo-borisovo-yuzhnoe/">Орехово-Борисово Южное</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Р</div>
+                    <div class="districts__links"><a href="/rajon-czariczyno/">Район Царицыно</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Ч</div>
+                    <div class="districts__links"><a href="/chertanovo-severnoe/">Чертаново Северное</a><a href="/chertanovo-czentralnoe/">Чертаново Центральное</a><a href="/chertanovo-yuzhnoe/">Чертаново Южное</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="districts__tab-item" id="tab-2"><a class="districts__tab-title" href="/vao/">ВАО</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Б</div>
+                    <div class="districts__links"><a href="/bogorodskoe/">Богородское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">В</div>
+                    <div class="districts__links"><a href="/veshnyaki/">Вешняки</a><a href="/vostochnoe-izmajlovo/">Восточное Измайлово</a><a href="/vostochnyj/">Восточный</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Г</div>
+                    <div class="districts__links"><a href="/galyanovo/">Гальяново</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">И</div>
+                    <div class="districts__links"><a href="/ivanovskoe/">Ивановское</a><a href="/izmajlovo/">Измайлово</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">К</div>
+                    <div class="districts__links"><a href="/kosino-ukhtomskij/">Косино-Ухтомский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">М</div>
+                    <div class="districts__links"><a href="/metrogorodok/">Метрогородок</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Н</div>
+                    <div class="districts__links"><a href="/novogireevo/">Новогиреево</a><a href="/novokosino/">Новокосино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">П</div>
+                    <div class="districts__links"><a href="/perovo/">Перово</a><a href="/preobrazhenskoe/">Преображенское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">С</div>
+                    <div class="districts__links"><a href="/sokolinaya-gora/">Соколиная Гора</a><a href="/sokolniki/">Сокольники</a><a href="/severo-izmajlovo/">Северо Измайлово</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="districts__tab-item" id="tab-3"><a class="districts__tab-title" href="/yuzao/">ЮЗАО</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">А</div>
+                    <div class="districts__links"><a href="/akademicheskij/">Академический</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Г</div>
+                    <div class="districts__links"><a href="/gagarinskij/">Гагаринский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">З</div>
+                    <div class="districts__links"><a href="/zyuzino/">Зюзино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">К</div>
+                    <div class="districts__links"><a href="/konkovo/">Коньково</a><a href="/kotlovka/">Котловка</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Л</div>
+                    <div class="districts__links"><a href="/lomonosovskij/">Ломоносовский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">О</div>
+                    <div class="districts__links"><a href="/obruchevskij/">Обручевский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">С</div>
+                    <div class="districts__links"><a href="/severnoe-butovo/">Северное Бутово</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Т</div>
+                    <div class="districts__links"><a href="/tyoplyj-stan/">Тёплый Стан</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Ч</div>
+                    <div class="districts__links"><a href="/cheryomushki/">Черёмушки</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Ю</div>
+                    <div class="districts__links"><a href="/yuzhnoe-butovo/">Южное Бутово</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Я</div>
+                    <div class="districts__links"><a href="/yasenevo/">Ясенево</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="districts__tab-item" id="tab-4"><a class="districts__tab-title" href="/svao/">СВАО</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">А</div>
+                    <div class="districts__links"><a href="/alekseevskij/">Алексеевский</a><a href="/altufevskij/">Алтуфьевский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Б</div>
+                    <div class="districts__links"><a href="/babushkinskij/">Бабушкинский</a><a href="/bibirevo/">Бибирево</a><a href="/butyrskij/">Бутырский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Л</div>
+                    <div class="districts__links"><a href="/lianozovo/">Лианозово</a><a href="/losinoostrovskij/">Лосиноостровский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">М</div>
+                    <div class="districts__links"><a href="/marfino/">Марфино</a><a href="/marina-roshha/">Марьина Роща</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">О</div>
+                    <div class="districts__links"><a href="/ostankinskij/">Останкинский</a><a href="/otradnoe/">Отрадное</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Р</div>
+                    <div class="districts__links"><a href="/rostokino/">Ростокино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">С</div>
+                    <div class="districts__links"><a href="/sviblovo/">Свиблово</a><a href="/severnoe-medvedkovo/">Северное Медведково</a><a href="/severnyj/">Северный</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Ю</div>
+                    <div class="districts__links"><a href="/yuzhnoe-medvedkovo/">Южное Медведково</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Я</div>
+                    <div class="districts__links"><a href="/yaroslavskij/">Ярославский</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="districts__tab-item" id="tab-5"><a class="districts__tab-title" href="/moskovskaya-oblast/">Московская область</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">А</div>
+                    <div class="districts__links"><a href="/aprelevka/">Апрелевка</a><a href="/agrogorod/">Агрогород</a><a href="/aniskino/">Анискино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Б</div>
+                    <div class="districts__links"><a href="/balashikha/">Балашиха</a><a href="/bronniczy/">Бронницы</a><a href="/bykovo/">Быково</a><a href="/barvikha/">Барвиха</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">В</div>
+                    <div class="districts__links"><a href="/vidnoe/">Видное</a><a href="/velyaminovo/">Вельяминово</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Г</div>
+                    <div class="districts__links"><a href="/goliczyno/">Голицыно</a><a href="/gorki-2/">Горки-2</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Д</div>
+                    <div class="districts__links"><a href="/dzerzhinskij/">Дзержинский</a><a href="/dolgoprudnyj/">Долгопрудный</a><a href="/domodedovo/">Домодедово</a><a href="/dedovsk/">Дедовск</a><a href="/dmitrov/">Дмитров</a><a href="/durykino/">Дурыкино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Ж</div>
+                    <div class="districts__links"><a href="/zheleznodorozhnyj/">Железнодорожный</a><a href="/zhukovskij/">Жуковский</a><a href="/zhavoronki/">Жаворонки</a><a href="/zhukovka/">Жуковка</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">З</div>
+                    <div class="districts__links"><a href="/zelenograd/">Зеленоград</a><a href="/zvenigorod/">Звенигород</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">И</div>
+                    <div class="districts__links"><a href="/ivanteevka/">Ивантеевка</a><a href="/istra/">Истра</a><a href="/ilinskoe/">Ильинское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">К</div>
+                    <div class="districts__links"><a href="/kotelniki/">Котельники</a><a href="/krasnogorsk/">Красногорск</a><a href="/korolyov/">Королёв</a><a href="/klimovsk/">Климовск</a><a href="/krasnoznamensk/">Краснознаменск</a><a href="/krasnoarmejsk/">Красноармейск</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Л</div>
+                    <div class="districts__links"><a href="/lyuberczy/">Люберцы</a><a href="/lytkarino/">Лыткарино</a><a href="/lobnya/">Лобня</a><a href="/losino-petrovskij/">Лосино-Петровский</a><a href="/lesnoj/">Лесной</a><a href="/lvovskij/">Львовский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">М</div>
+                    <div class="districts__links"><a href="/mytishhi/">Мытищи</a><a href="/moskovskij/">Московский</a><a href="/malakhovka/">Малаховка</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Н</div>
+                    <div class="districts__links"><a href="/nakhabino/">Нахабино</a><a href="/noginsk/">Ногинск</a><a href="/nikolina-gora/">Николина Гора</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">О</div>
+                    <div class="districts__links"><a href="/odinczovo/">Одинцово</a><a href="/obukhovo/">Обухово</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">П</div>
+                    <div class="districts__links"><a href="/podolsk/">Подольск</a><a href="/pushkino/">Пушкино</a><a href="/podvyaznogo/">Подвязного</a><a href="/pervomajskij/">Первомайский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Р</div>
+                    <div class="districts__links"><a href="/reutov/">Реутов</a><a href="/ramenskoe/">Раменское</a><a href="/romashkovo/">Ромашково</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">С</div>
+                    <div class="districts__links"><a href="/staraya-kupavna/">Старая Купавна</a><a href="/solnechnogorsk/">Солнечногорск</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Т</div>
+                    <div class="districts__links"><a href="/troiczk/">Троицк</a><a href="/tomilino/">Томилино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">У</div>
+                    <div class="districts__links"><a href="/uspenskoe/">Успенское</a><a href="/usovo/">Усово</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Ф</div>
+                    <div class="districts__links"><a href="/fryazino/">Фрязино</a><a href="/fryanovo/">Фряново</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Х</div>
+                    <div class="districts__links"><a href="/khimki/">Химки</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Ч</div>
+                    <div class="districts__links"><a href="/chernogolovka/">Черноголовка</a><a href="/chekhov/">Чехов</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Щ</div>
+                    <div class="districts__links"><a href="/shherbinka/">Щербинка</a><a href="/shhelkovo/">Щелково</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Э</div>
+                    <div class="districts__links"><a href="/elektrougli/">Электроугли</a><a href="/elektrostal/">Электросталь</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Ю</div>
+                    <div class="districts__links"><a href="/yubilejnyj/">Юбилейный</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Я</div>
+                    <div class="districts__links"><a href="/yakhroma/">Яхрома</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="districts__tab-item" id="tab-6"><a class="districts__tab-title" href="/yuvao/">ЮВАО</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">В</div>
+                    <div class="districts__links"><a href="/vykhino-zhulebino/">Выхино-Жулебино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">К</div>
+                    <div class="districts__links"><a href="/kapotnya/">Капотня</a><a href="/kuzminki/">Кузминки</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Л</div>
+                    <div class="districts__links"><a href="/lefortovo/">Лефортово</a><a href="/lyublino/">Люблино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">М</div>
+                    <div class="districts__links"><a href="/marino/">Марьино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Н</div>
+                    <div class="districts__links"><a href="/nekrasovka/">Некрасовка</a><a href="/nizhegorodskij/">Нижегородский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">П</div>
+                    <div class="districts__links"><a href="/pechatniki/">Печатники</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Р</div>
+                    <div class="districts__links"><a href="/ryazanskij/">Рязанский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Т</div>
+                    <div class="districts__links"><a href="/tekstilshhiki/">Текстильщики</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Ю</div>
+                    <div class="districts__links"><a href="/yuzhnoportovyj/">Южнопортовый</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="districts__tab-item" id="tab-7"><a class="districts__tab-title" href="/zao/">ЗАО</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">В</div>
+                    <div class="districts__links"><a href="/vnukovo/">Внуково</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Д</div>
+                    <div class="districts__links"><a href="/dorogomilovo/">Дорогомилово</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">К</div>
+                    <div class="districts__links"><a href="/krylatskoe/">Крылатское</a><a href="/kunczevo/">Кунцево</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">М</div>
+                    <div class="districts__links"><a href="/mozhajsk/">Можайск</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Н</div>
+                    <div class="districts__links"><a href="/novo-peredelkino/">Ново-Переделкино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">О</div>
+                    <div class="districts__links"><a href="/ochakovo-matveevskoe/">Очаково-Матвеевское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">П</div>
+                    <div class="districts__links"><a href="/prospekt-vernadskogo/">Проспект Вернадского</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Р</div>
+                    <div class="districts__links"><a href="/ramenki/">Раменки</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">С</div>
+                    <div class="districts__links"><a href="/solnczevo/">Солнцево</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Т</div>
+                    <div class="districts__links"><a href="/troparyovo-nikulino/">Тропарёво-Никулино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Ф</div>
+                    <div class="districts__links"><a href="/filevskij-park/">Филевский Парк</a><a href="/fili-davydkovo/">Фили-Давыдково</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="districts__tab-item" id="tab-8"><a class="districts__tab-title" href="/sao/">САО</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">А</div>
+                    <div class="districts__links"><a href="/aeroport/">Аэропорт</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Б</div>
+                    <div class="districts__links"><a href="/begovoj/">Беговой</a><a href="/beskudnikovskij/">Бескудниковский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">В</div>
+                    <div class="districts__links"><a href="/vojkovskij/">Войковский</a><a href="/vostochnoe-degunino/">Восточное Дегунино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Г</div>
+                    <div class="districts__links"><a href="/golovinskij/">Головинский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Д</div>
+                    <div class="districts__links"><a href="/dmitrovskij/">Дмитровский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">З</div>
+                    <div class="districts__links"><a href="/zapadnoe-degunino/">Западное Дегунино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">К</div>
+                    <div class="districts__links"><a href="/koptevo/">Коптево</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Л</div>
+                    <div class="districts__links"><a href="/levoberezhnyj/">Левобережный</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">М</div>
+                    <div class="districts__links"><a href="/molzhaninovskij/">Молжаниновский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">С</div>
+                    <div class="districts__links"><a href="/savyolovskij/">Савёловский</a><a href="/sokol/">Сокол</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Т</div>
+                    <div class="districts__links"><a href="/temiryazevskij/">Темирязевский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Х</div>
+                    <div class="districts__links"><a href="/khovrino/">Ховрино</a><a href="/khoroshyovskij/">Хорошёвский</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="districts__tab-item" id="tab-9"><a class="districts__tab-title" href="/nao/">НАО</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">В</div>
+                    <div class="districts__links"><a href="/vnukovskoe/">Внуковское</a><a href="/voskresenskoe/">Воскресенское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Д</div>
+                    <div class="districts__links"><a href="/desyonovskoe/">Десёновское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">К</div>
+                    <div class="districts__links"><a href="/kokoshkino/">Кокошкино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">М</div>
+                    <div class="districts__links"><a href="/marushkinskoe/">Марушкинское</a><a href="/moskovskij/">Московский</a><a href="/mosrentgen/">Мосрентген</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Р</div>
+                    <div class="districts__links"><a href="/ryazanovskoe/">Рязановское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">С</div>
+                    <div class="districts__links"><a href="/sosinskoe/">Сосинское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Ф</div>
+                    <div class="districts__links"><a href="/filimonovskoe/">Филимоновское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Щ</div>
+                    <div class="districts__links"><a href="/shherbinka/">Щербинка</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="districts__tab-item" id="tab-10"><a class="districts__tab-title" href="/zelao/">ЗЕЛАО</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">К</div>
+                    <div class="districts__links"><a href="/kryukovo/">Крюково</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">М</div>
+                    <div class="districts__links"><a href="/matushkino/">Матушкино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">С</div>
+                    <div class="districts__links"><a href="/savyolki/">Савёлки</a><a href="/staroe-kryukovo/">Старое Крюково</a><a href="/silino/">Силино</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="districts__tab-item" id="tab-11"><a class="districts__tab-title" href="/tao/">ТАО</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">В</div>
+                    <div class="districts__links"><a href="/voronovskoe/">Вороновское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">К</div>
+                    <div class="districts__links"><a href="/kievskij/">Киевский</a><a href="/klyonovskoe/">Клёновское</a><a href="/krasnopakhorskoe/">Краснопахорское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">М</div>
+                    <div class="districts__links"><a href="/mikhajlovo-yarczevskoe/">Михайлово-Ярцевское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Н</div>
+                    <div class="districts__links"><a href="/novofyodorovskoe/">Новофёдоровское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">П</div>
+                    <div class="districts__links"><a href="/pervomajskoe/">Первомайское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Р</div>
+                    <div class="districts__links"><a href="/rogovskoe/">Роговское</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Т</div>
+                    <div class="districts__links"><a href="/troiczk/">Троицк</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Щ</div>
+                    <div class="districts__links"><a href="/shhapovskoe/">Щаповское</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="districts__tab-item" id="tab-12"><a class="districts__tab-title" href="/szao/">СЗАО</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">К</div>
+                    <div class="districts__links"><a href="/kurkino/">Куркино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">М</div>
+                    <div class="districts__links"><a href="/mitino/">Митино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">П</div>
+                    <div class="districts__links"><a href="/pokrovskoe-streshnevo/">Покровское-Стрешнево</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">С</div>
+                    <div class="districts__links"><a href="/severnoe-tushino/">Северное Тушино</a><a href="/strogino/">Строгино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Х</div>
+                    <div class="districts__links"><a href="/khoroshyovo-mnyovniki/">Хорошёво-Мнёвники</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Щ</div>
+                    <div class="districts__links"><a href="/shhukino/">Щукино</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Ю</div>
+                    <div class="districts__links"><a href="/yuzhnoe-tushino/">Южное Тушино</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="districts__tab-item" id="tab-13"><a class="districts__tab-title" href="/czao/">ЦАО</a>
+                <div class="districts__groups"> 
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">А</div>
+                    <div class="districts__links"><a href="/arbat/">Арбат</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Б</div>
+                    <div class="districts__links"><a href="/basmannyj/">Басманный</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">З</div>
+                    <div class="districts__links"><a href="/zamoskvoreche/">Замоскворечье</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">К</div>
+                    <div class="districts__links"><a href="/krasnoselskij/">Красносельский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">М</div>
+                    <div class="districts__links"><a href="/meshhanskij/">Мещанский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">П</div>
+                    <div class="districts__links"><a href="/presnenskij/">Пресненский</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Т</div>
+                    <div class="districts__links"><a href="/taganskij/">Таганский</a><a href="/tverskoj/">Тверской</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Х</div>
+                    <div class="districts__links"><a href="/khamovniki/">Хамовники</a></div>
+                  </div>
+                  <div class="districts__group"> 
+                    <div class="districts__group-item">Я</div>
+                    <div class="districts__links"><a href="/yakimanka/">Якиманка</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="metro">
         <div class="metro__container">
           <h3 class="metro__title">Станции метро</h3>
@@ -156,43 +776,43 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">А</div>
-                    <div class="metro__links"><a href="#">Арбатская</a></div>
+                    <div class="metro__links"><a href="/arbatskaya/">Арбатская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Бауманская</a></div>
+                    <div class="metro__links"><a href="/baumanskaya/">Бауманская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">В</div>
-                    <div class="metro__links"><a href="#">Волоколамская</a></div>
+                    <div class="metro__links"><a href="/volokolamskaya/">Волоколамская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">И</div>
-                    <div class="metro__links"><a href="#">Измайловская</a></div>
+                    <div class="metro__links"><a href="/izmajlovskaya/">Измайловская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Киевская</a><a href="#">Курская</a><a href="#">Крылатское</a><a href="#">Кунцевская</a></div>
+                    <div class="metro__links"><a href="/kievskaya/">Киевская</a><a href="/kurskaya/">Курская</a><a href="/krylatskoe/">Крылатское</a><a href="/kunczevskaya/">Кунцевская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">М</div>
-                    <div class="metro__links"><a href="#">Митино</a><a href="#">Молодёжная</a><a href="#">Мякинино</a></div>
+                    <div class="metro__links"><a href="/mitino/">Митино</a><a href="/molodyozhnaya/">Молодёжная</a><a href="/myakinino/">Мякинино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Парк Победы</a><a href="#">Партизанская</a><a href="#">Первомайская</a><a href="#">Площадь Революции</a><a href="#">Пятницкое Шоссе</a></div>
+                    <div class="metro__links"><a href="/park-pobedy/">Парк Победы</a><a href="/partizanskaya/">Партизанская</a><a href="/pervomajskaya/">Первомайская</a><a href="/ploshhad-revolyuczii/">Площадь Революции</a><a href="/pyatniczkoe-shosse/">Пятницкое Шоссе</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Семёновская</a><a href="#">Славянский бульвар</a><a href="#">Смоленская</a><a href="#">Строгино</a></div>
+                    <div class="metro__links"><a href="/semyonovskaya/">Семёновская</a><a href="/slavyanskij-bulvar/">Славянский бульвар</a><a href="/smolenskaya/">Смоленская</a><a href="/strogino/">Строгино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Щ</div>
-                    <div class="metro__links"><a href="#">Щёлковская</a></div>
+                    <div class="metro__links"><a href="/shhyolkovskaya/">Щёлковская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Э</div>
-                    <div class="metro__links"><a href="#">Элктрозаводская</a></div>
+                    <div class="metro__links"><a href="/elktrozavodskaya/">Элктрозаводская</a></div>
                   </div>
                 </div>
               </div>
@@ -201,27 +821,27 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">Д</div>
-                    <div class="metro__links"><a href="#">Деловой центр</a></div>
+                    <div class="metro__links"><a href="/delovoj-czentr/">Деловой центр</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Петровский парк</a></div>
+                    <div class="metro__links"><a href="/petrovskij-park/">Петровский парк</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Савёловская</a></div>
+                    <div class="metro__links"><a href="/savyolovskaya/">Савёловская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Х</div>
-                    <div class="metro__links"><a href="#">Хорошёвская</a></div>
+                    <div class="metro__links"><a href="/khoroshyovskaya/">Хорошёвская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ц</div>
-                    <div class="metro__links"><a href="#">ЦСКА</a></div>
+                    <div class="metro__links"><a href="/czska/">ЦСКА</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ш</div>
-                    <div class="metro__links"><a href="#">Шелепиха</a></div>
+                    <div class="metro__links"><a href="/shelepikha/">Шелепиха</a></div>
                   </div>
                 </div>
               </div>
@@ -230,15 +850,15 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Битцевский парк</a><a href="#">Бульвар адмирала Ушакова</a><a href="#">Бунинская Аллея</a></div>
+                    <div class="metro__links"><a href="/bitczevskij-park/">Битцевский парк</a><a href="/bulvar-admirala-ushakova/">Бульвар адмирала Ушакова</a><a href="/buninskaya-alleya/">Бунинская Аллея</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Л</div>
-                    <div class="metro__links"><a href="#">Лесопарковая</a></div>
+                    <div class="metro__links"><a href="/lesoparkovaya/">Лесопарковая</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">У</div>
-                    <div class="metro__links"><a href="#">Улица Горчакова</a><a href="#">Улица Скобелевская</a><a href="#">Улица Старокачаловская</a></div>
+                    <div class="metro__links"><a href="/ulicza-gorchakova/">Улица Горчакова</a><a href="/ulicza-skobelevskaya/">Улица Скобелевская</a><a href="/ulicza-starokachalovskaya/">Улица Старокачаловская</a></div>
                   </div>
                 </div>
               </div>
@@ -247,59 +867,59 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">А</div>
-                    <div class="metro__links"><a href="#">Автозаводская</a><a href="#">Алма-Атинская</a><a href="#">Аэропорт</a></div>
+                    <div class="metro__links"><a href="/avtozavodskaya/">Автозаводская</a><a href="/alma-atinskaya/">Алма-Атинская</a><a href="/aeroport/">Аэропорт</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Белорусская</a><a href="#">Беломорская</a></div>
+                    <div class="metro__links"><a href="/belorusskaya/">Белорусская</a><a href="/belomorskaya/">Беломорская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">В</div>
-                    <div class="metro__links"><a href="#">Водный стадион</a><a href="#">Войковская</a></div>
+                    <div class="metro__links"><a href="/vodnyj-stadion/">Водный стадион</a><a href="/vojkovskaya/">Войковская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Д</div>
-                    <div class="metro__links"><a href="#">Динамо</a><a href="#">Домодедовская</a></div>
+                    <div class="metro__links"><a href="/dinamo/">Динамо</a><a href="/domodedovskaya/">Домодедовская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Кантемировская</a><a href="#">Каширская</a><a href="#">Коломенская</a><a href="#">Красногвардейская</a></div>
+                    <div class="metro__links"><a href="/kantemirovskaya/">Кантемировская</a><a href="/kashirskaya/">Каширская</a><a href="/kolomenskaya/">Коломенская</a><a href="/krasnogvardejskaya/">Красногвардейская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">М</div>
-                    <div class="metro__links"><a href="#">Маяковская</a></div>
+                    <div class="metro__links"><a href="/mayakovskaya/">Маяковская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Н</div>
-                    <div class="metro__links"><a href="#">Новокузнецкая</a></div>
+                    <div class="metro__links"><a href="/novokuzneczkaya/">Новокузнецкая</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">О</div>
-                    <div class="metro__links"><a href="#">Орехово</a></div>
+                    <div class="metro__links"><a href="/orekhovo/">Орехово</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Павелецкая</a></div>
+                    <div class="metro__links"><a href="/paveleczkaya/">Павелецкая</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Р</div>
-                    <div class="metro__links"><a href="#">Речной вокзал</a></div>
+                    <div class="metro__links"><a href="/rechnoj-vokzal/">Речной вокзал</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Сокол</a></div>
+                    <div class="metro__links"><a href="/sokol/">Сокол</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Т</div>
-                    <div class="metro__links"><a href="#">Тверская</a><a href="#">Театральная</a><a href="#">Технопарк</a></div>
+                    <div class="metro__links"><a href="/tverskaya/">Тверская</a><a href="/teatralnaya/">Театральная</a><a href="/tekhnopark/">Технопарк</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Х</div>
-                    <div class="metro__links"><a href="#">Ховрино</a></div>
+                    <div class="metro__links"><a href="/khovrino/">Ховрино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ц</div>
-                    <div class="metro__links"><a href="#">Царицыно</a></div>
+                    <div class="metro__links"><a href="/czariczyno/">Царицыно</a></div>
                   </div>
                 </div>
               </div>
@@ -308,59 +928,59 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">А</div>
-                    <div class="metro__links"><a href="#">Авиамоторная</a></div>
+                    <div class="metro__links"><a href="/aviamotornaya/">Авиамоторная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Боровское шоссе</a></div>
+                    <div class="metro__links"><a href="/borovskoe-shosse/">Боровское шоссе</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Г</div>
-                    <div class="metro__links"><a href="#">Говорово</a></div>
+                    <div class="metro__links"><a href="/govorovo/">Говорово</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Л</div>
-                    <div class="metro__links"><a href="#">Ломоносовский проспект</a></div>
+                    <div class="metro__links"><a href="/lomonosovskij-prospekt/">Ломоносовский проспект</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">М</div>
-                    <div class="metro__links"><a href="#">Марксистская</a><a href="#">Минская</a><a href="#">Мичуринский проспект</a></div>
+                    <div class="metro__links"><a href="/marksistskaya/">Марксистская</a><a href="/minskaya/">Минская</a><a href="/michurinskij-prospekt/">Мичуринский проспект</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Н</div>
-                    <div class="metro__links"><a href="#">Новогиреево</a><a href="#">Новокосино</a><a href="#">Новопеределкино</a></div>
+                    <div class="metro__links"><a href="/novogireevo/">Новогиреево</a><a href="/novokosino/">Новокосино</a><a href="/novoperedelkino/">Новопеределкино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">О</div>
-                    <div class="metro__links"><a href="#">Озерная</a></div>
+                    <div class="metro__links"><a href="/ozernaya/">Озерная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Парк Победы</a><a href="#">Перово</a><a href="#">Петровский парк</a><a href="#">Площадь Ильича</a></div>
+                    <div class="metro__links"><a href="/park-pobedy/">Парк Победы</a><a href="/perovo/">Перово</a><a href="/petrovskij-park/">Петровский парк</a><a href="/ploshhad-ilicha/">Площадь Ильича</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Р</div>
-                    <div class="metro__links"><a href="#">Раменки</a><a href="#">Рассказовка</a></div>
+                    <div class="metro__links"><a href="/ramenki/">Раменки</a><a href="/rasskazovka/">Рассказовка</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Солнцево</a><a href="#">Савеловкая</a></div>
+                    <div class="metro__links"><a href="/solnczevo/">Солнцево</a><a href="/savelovkaya/">Савеловкая</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Т</div>
-                    <div class="metro__links"><a href="#">Третьяковская</a></div>
+                    <div class="metro__links"><a href="/tretyakovskaya/">Третьяковская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Х</div>
-                    <div class="metro__links"><a href="#">Хорошёвская</a></div>
+                    <div class="metro__links"><a href="/khoroshyovskaya/">Хорошёвская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ц</div>
-                    <div class="metro__links"><a href="#">ЦСКА</a></div>
+                    <div class="metro__links"><a href="/czska/">ЦСКА</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ш</div>
-                    <div class="metro__links"><a href="#">Шоссе Энтузиастов</a><a href="#">Шелепиха</a></div>
+                    <div class="metro__links"><a href="/shosse-entuziastov/">Шоссе Энтузиастов</a><a href="/shelepikha/">Шелепиха</a></div>
                   </div>
                 </div>
               </div>
@@ -369,59 +989,59 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">А</div>
-                    <div class="metro__links"><a href="#">Академическая</a><a href="#">Алексеевская</a></div>
+                    <div class="metro__links"><a href="/akademicheskaya/">Академическая</a><a href="/alekseevskaya/">Алексеевская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Бабушкинская</a><a href="#">Беляево</a><a href="#">Ботанический сад</a></div>
+                    <div class="metro__links"><a href="/babushkinskaya/">Бабушкинская</a><a href="/belyaevo/">Беляево</a><a href="/botanicheskij-sad/">Ботанический сад</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">В</div>
-                    <div class="metro__links"><a href="#">ВДНХ</a></div>
+                    <div class="metro__links"><a href="/vdnkh/">ВДНХ</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Калужская</a><a href="#">Китай-город</a><a href="#">Коньково</a></div>
+                    <div class="metro__links"><a href="/kaluzhskaya/">Калужская</a><a href="/kitaj-gorod/">Китай-город</a><a href="/konkovo/">Коньково</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Л</div>
-                    <div class="metro__links"><a href="#">Ленинский проспект</a></div>
+                    <div class="metro__links"><a href="/leninskij-prospekt/">Ленинский проспект</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">М</div>
-                    <div class="metro__links"><a href="#">Медведково</a></div>
+                    <div class="metro__links"><a href="/medvedkovo/">Медведково</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Н</div>
-                    <div class="metro__links"><a href="#">Новоясеневская</a><a href="#">Новые Черёмушки</a></div>
+                    <div class="metro__links"><a href="/novoyasenevskaya/">Новоясеневская</a><a href="/novye-cheryomushki/">Новые Черёмушки</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">О</div>
-                    <div class="metro__links"><a href="#">Октябрьская</a></div>
+                    <div class="metro__links"><a href="/oktyabrskaya/">Октябрьская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Проспект Мира</a><a href="#">Профсоюзная</a></div>
+                    <div class="metro__links"><a href="/prospekt-mira/">Проспект Мира</a><a href="/profsoyuznaya/">Профсоюзная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Р</div>
-                    <div class="metro__links"><a href="#">Рижская</a></div>
+                    <div class="metro__links"><a href="/rizhskaya/">Рижская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Свиблово</a><a href="#">Сухаревская</a></div>
+                    <div class="metro__links"><a href="/sviblovo/">Свиблово</a><a href="/sukharevskaya/">Сухаревская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Т</div>
-                    <div class="metro__links"><a href="#">Третьяковская</a><a href="#">Тёплый стан</a><a href="#">Тургеневская</a></div>
+                    <div class="metro__links"><a href="/tretyakovskaya/">Третьяковская</a><a href="/tyoplyj-stan/">Тёплый стан</a><a href="/turgenevskaya/">Тургеневская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ш</div>
-                    <div class="metro__links"><a href="#">Шаболовская</a></div>
+                    <div class="metro__links"><a href="/shabolovskaya/">Шаболовская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Я</div>
-                    <div class="metro__links"><a href="#">Ясенево</a></div>
+                    <div class="metro__links"><a href="/yasenevo/">Ясенево</a></div>
                   </div>
                 </div>
               </div>
@@ -430,11 +1050,11 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">В</div>
-                    <div class="metro__links"><a href="#">Варшавская</a></div>
+                    <div class="metro__links"><a href="/varshavskaya/">Варшавская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Каширская</a><a href="#">Каховская</a></div>
+                    <div class="metro__links"><a href="/kashirskaya/">Каширская</a><a href="/kakhovskaya/">Каховская</a></div>
                   </div>
                 </div>
               </div>
@@ -443,35 +1063,35 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Белорусская</a></div>
+                    <div class="metro__links"><a href="/belorusskaya/">Белорусская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Д</div>
-                    <div class="metro__links"><a href="#">Добрынинская</a></div>
+                    <div class="metro__links"><a href="/dobryninskaya/">Добрынинская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Киевская</a><a href="#">Комсомольская</a><a href="#">Краснопресненская</a><a href="#">Курская</a></div>
+                    <div class="metro__links"><a href="/kievskaya/">Киевская</a><a href="/komsomolskaya/">Комсомольская</a><a href="/krasnopresnenskaya/">Краснопресненская</a><a href="/kurskaya/">Курская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Н</div>
-                    <div class="metro__links"><a href="#">Новослободская</a></div>
+                    <div class="metro__links"><a href="/novoslobodskaya/">Новослободская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">О</div>
-                    <div class="metro__links"><a href="#">Октябрьская</a></div>
+                    <div class="metro__links"><a href="/oktyabrskaya/">Октябрьская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Павелецкая</a><a href="#">Парк Культуры</a><a href="#">Проспект Мира</a></div>
+                    <div class="metro__links"><a href="/paveleczkaya/">Павелецкая</a><a href="/park-kultury/">Парк Культуры</a><a href="/prospekt-mira/">Проспект Мира</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Т</div>
-                    <div class="metro__links"><a href="#">Таганская</a></div>
+                    <div class="metro__links"><a href="/taganskaya/">Таганская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">У</div>
-                    <div class="metro__links"><a href="#">Улица Новаторов</a></div>
+                    <div class="metro__links"><a href="/ulicza-novatorov/">Улица Новаторов</a></div>
                   </div>
                 </div>
               </div>
@@ -480,63 +1100,63 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Борисово</a><a href="#">Братиславская</a><a href="#">Бутырская</a></div>
+                    <div class="metro__links"><a href="/borisovo/">Борисово</a><a href="/bratislavskaya/">Братиславская</a><a href="/butyrskaya/">Бутырская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">В</div>
-                    <div class="metro__links"><a href="#">Верхние Лихоборы</a><a href="#">Волжская</a></div>
+                    <div class="metro__links"><a href="/verkhnie-likhobory/">Верхние Лихоборы</a><a href="/volzhskaya/">Волжская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Д</div>
-                    <div class="metro__links"><a href="#">Достоевская</a><a href="#">Дубровка</a></div>
+                    <div class="metro__links"><a href="/dostoevskaya/">Достоевская</a><a href="/dubrovka/">Дубровка</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">З</div>
-                    <div class="metro__links"><a href="#">Зябликово</a></div>
+                    <div class="metro__links"><a href="/zyablikovo/">Зябликово</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Кожуховская</a><a href="#">Крестьянская застава</a></div>
+                    <div class="metro__links"><a href="/kozhukhovskaya/">Кожуховская</a><a href="/krestyanskaya-zastava/">Крестьянская застава</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Л</div>
-                    <div class="metro__links"><a href="#">Люблино</a></div>
+                    <div class="metro__links"><a href="/lyublino/">Люблино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">М</div>
-                    <div class="metro__links"><a href="#">Марьина роща</a><a href="#">Марьино</a></div>
+                    <div class="metro__links"><a href="/marina-roshha/">Марьина роща</a><a href="/marino/">Марьино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">О</div>
-                    <div class="metro__links"><a href="#">Окружная</a></div>
+                    <div class="metro__links"><a href="/okruzhnaya/">Окружная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Петровско-Разумовская</a><a href="#">Печатники</a></div>
+                    <div class="metro__links"><a href="/petrovsko-razumovskaya/">Петровско-Разумовская</a><a href="/pechatniki/">Печатники</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Р</div>
-                    <div class="metro__links"><a href="#">Римская</a></div>
+                    <div class="metro__links"><a href="/rimskaya/">Римская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Селигерская</a><a href="#">Сретенский бульвар</a></div>
+                    <div class="metro__links"><a href="/seligerskaya/">Селигерская</a><a href="/sretenskij-bulvar/">Сретенский бульвар</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Т</div>
-                    <div class="metro__links"><a href="#">Трубная</a></div>
+                    <div class="metro__links"><a href="/trubnaya/">Трубная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ф</div>
-                    <div class="metro__links"><a href="#">Фонвизинская</a></div>
+                    <div class="metro__links"><a href="/fonvizinskaya/">Фонвизинская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ч</div>
-                    <div class="metro__links"><a href="#">Чкаловская</a></div>
+                    <div class="metro__links"><a href="/chkalovskaya/">Чкаловская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ш</div>
-                    <div class="metro__links"><a href="#">Шипиловская</a></div>
+                    <div class="metro__links"><a href="/shipilovskaya/">Шипиловская</a></div>
                   </div>
                 </div>
               </div>
@@ -545,15 +1165,15 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">В</div>
-                    <div class="metro__links"><a href="#">Выставочный центр</a></div>
+                    <div class="metro__links"><a href="/vystavochnyj-czentr/">Выставочный центр</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Т</div>
-                    <div class="metro__links"><a href="#">Тимирязевская</a><a href="#">Телецентр</a></div>
+                    <div class="metro__links"><a href="/timiryazevskaya/">Тимирязевская</a><a href="/teleczentr/">Телецентр</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">У</div>
-                    <div class="metro__links"><a href="#">Улица Милашенкова</a><a href="#">Улица Сергея Эйзенштейна</a><a href="#">Улица Академика Королёва</a></div>
+                    <div class="metro__links"><a href="/ulicza-milashenkova/">Улица Милашенкова</a><a href="/ulicza-sergeya-ejzenshtejna/">Улица Сергея Эйзенштейна</a><a href="/ulicza-akademika-korolyova/">Улица Академика Королёва</a></div>
                   </div>
                 </div>
               </div>
@@ -562,67 +1182,67 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">А</div>
-                    <div class="metro__links"><a href="#">Автозаводская</a><a href="#">Андроновка</a></div>
+                    <div class="metro__links"><a href="/avtozavodskaya/">Автозаводская</a><a href="/andronovka/">Андроновка</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Бульвар Рокоссовского</a><a href="#">Ботанический сад</a><a href="#">Балтийская</a><a href="#">Белокаменная</a></div>
+                    <div class="metro__links"><a href="/bulvar-rokossovskogo/">Бульвар Рокоссовского</a><a href="/botanicheskij-sad/">Ботанический сад</a><a href="/baltijskaya/">Балтийская</a><a href="/belokamennaya/">Белокаменная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">В</div>
-                    <div class="metro__links"><a href="#">Владыкино</a><a href="#">Верхние Котлы</a></div>
+                    <div class="metro__links"><a href="/vladykino/">Владыкино</a><a href="/verkhnie-kotly/">Верхние Котлы</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Д</div>
-                    <div class="metro__links"><a href="#">Дубровка</a><a href="#">Деловой центр</a></div>
+                    <div class="metro__links"><a href="/dubrovka/">Дубровка</a><a href="/delovoj-czentr/">Деловой центр</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">З</div>
-                    <div class="metro__links"><a href="#">ЗИЛ</a><a href="#">Зорге</a></div>
+                    <div class="metro__links"><a href="/zil/">ЗИЛ</a><a href="/zorge/">Зорге</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">И</div>
-                    <div class="metro__links"><a href="#">Измайлово</a></div>
+                    <div class="metro__links"><a href="/izmajlovo/">Измайлово</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Кутузовская</a><a href="#">Коптево</a><a href="#">Крымская</a></div>
+                    <div class="metro__links"><a href="/kutuzovskaya/">Кутузовская</a><a href="/koptevo/">Коптево</a><a href="/krymskaya/">Крымская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Л</div>
-                    <div class="metro__links"><a href="#">Лихоборы</a><a href="#">Локомотив</a><a href="#">Лужники</a></div>
+                    <div class="metro__links"><a href="/likhobory/">Лихоборы</a><a href="/lokomotiv/">Локомотив</a><a href="/luzhniki/">Лужники</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Н</div>
-                    <div class="metro__links"><a href="#">Нижегородская</a><a href="#">Новохохловская</a></div>
+                    <div class="metro__links"><a href="/nizhegorodskaya/">Нижегородская</a><a href="/novokhokhlovskaya/">Новохохловская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">О</div>
-                    <div class="metro__links"><a href="#">Окружная</a></div>
+                    <div class="metro__links"><a href="/okruzhnaya/">Окружная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Панфиловская</a><a href="#">Площадь Гагарина</a></div>
+                    <div class="metro__links"><a href="/panfilovskaya/">Панфиловская</a><a href="/ploshhad-gagarina/">Площадь Гагарина</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Р</div>
-                    <div class="metro__links"><a href="#">Ростокино</a></div>
+                    <div class="metro__links"><a href="/rostokino/">Ростокино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Соколиная Гора</a><a href="#">Стрешнево</a></div>
+                    <div class="metro__links"><a href="/sokolinaya-gora/">Соколиная Гора</a><a href="/streshnevo/">Стрешнево</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">У</div>
-                    <div class="metro__links"><a href="#">Угрешская</a></div>
+                    <div class="metro__links"><a href="/ugreshskaya/">Угрешская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Х</div>
-                    <div class="metro__links"><a href="#">Хорошёво</a></div>
+                    <div class="metro__links"><a href="/khoroshyovo/">Хорошёво</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ш</div>
-                    <div class="metro__links"><a href="#">Шоссе Энтузиастов</a><a href="#">Шелепиха</a></div>
+                    <div class="metro__links"><a href="/shosse-entuziastov/">Шоссе Энтузиастов</a><a href="/shelepikha/">Шелепиха</a></div>
                   </div>
                 </div>
               </div>
@@ -631,59 +1251,59 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Белорусская</a><a href="#">Беговая</a><a href="#">Баковка</a><a href="#">Бескудниково</a></div>
+                    <div class="metro__links"><a href="/belorusskaya/">Белорусская</a><a href="/begovaya/">Беговая</a><a href="/bakovka/">Баковка</a><a href="/beskudnikovo/">Бескудниково</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">В</div>
-                    <div class="metro__links"><a href="#">Водники</a></div>
+                    <div class="metro__links"><a href="/vodniki/">Водники</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Д</div>
-                    <div class="metro__links"><a href="#">Дегунино</a><a href="#">Долгопрудная</a></div>
+                    <div class="metro__links"><a href="/degunino/">Дегунино</a><a href="/dolgoprudnaya/">Долгопрудная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Кунцевская</a></div>
+                    <div class="metro__links"><a href="/kunczevskaya/">Кунцевская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Л</div>
-                    <div class="metro__links"><a href="#">Лианозово</a><a href="#">Лобня</a></div>
+                    <div class="metro__links"><a href="/lianozovo/">Лианозово</a><a href="/lobnya/">Лобня</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">М</div>
-                    <div class="metro__links"><a href="#">Марк</a></div>
+                    <div class="metro__links"><a href="/mark/">Марк</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Н</div>
-                    <div class="metro__links"><a href="#">Немчиновка</a><a href="#">Новодачная</a></div>
+                    <div class="metro__links"><a href="/nemchinovka/">Немчиновка</a><a href="/novodachnaya/">Новодачная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">О</div>
-                    <div class="metro__links"><a href="#">Окружная</a><a href="#">Одинцово</a></div>
+                    <div class="metro__links"><a href="/okruzhnaya/">Окружная</a><a href="/odinczovo/">Одинцово</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Р</div>
-                    <div class="metro__links"><a href="#">Рабочий Посёлок</a></div>
+                    <div class="metro__links"><a href="/rabochij-posyolok/">Рабочий Посёлок</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Савеловкая</a><a href="#">Славянский бульвар</a><a href="#">Сетунь</a><a href="#">Сколково</a></div>
+                    <div class="metro__links"><a href="/savelovkaya/">Савеловкая</a><a href="/slavyanskij-bulvar/">Славянский бульвар</a><a href="/setun/">Сетунь</a><a href="/skolkovo/">Сколково</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Т</div>
-                    <div class="metro__links"><a href="#">Темирязевская</a><a href="#">Тестовская</a></div>
+                    <div class="metro__links"><a href="/temiryazevskaya/">Темирязевская</a><a href="/testovskaya/">Тестовская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ф</div>
-                    <div class="metro__links"><a href="#">Фили</a></div>
+                    <div class="metro__links"><a href="/fili/">Фили</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Х</div>
-                    <div class="metro__links"><a href="#">Хлебниково</a></div>
+                    <div class="metro__links"><a href="/khlebnikovo/">Хлебниково</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ш</div>
-                    <div class="metro__links"><a href="#">Шереметьевская</a></div>
+                    <div class="metro__links"><a href="/sheremetevskaya/">Шереметьевская</a></div>
                   </div>
                 </div>
               </div>
@@ -692,63 +1312,63 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">А</div>
-                    <div class="metro__links"><a href="#">Аникеевка</a></div>
+                    <div class="metro__links"><a href="/anikeevka/">Аникеевка</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Битца</a><a href="#">Бутово</a></div>
+                    <div class="metro__links"><a href="/bitcza/">Битца</a><a href="/butovo/">Бутово</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">В</div>
-                    <div class="metro__links"><a href="#">Волоколамская</a></div>
+                    <div class="metro__links"><a href="/volokolamskaya/">Волоколамская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Г</div>
-                    <div class="metro__links"><a href="#">Гражданская</a></div>
+                    <div class="metro__links"><a href="/grazhdanskaya/">Гражданская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Д</div>
-                    <div class="metro__links"><a href="#">Дмитровская</a><a href="#">Депо</a></div>
+                    <div class="metro__links"><a href="/dmitrovskaya/">Дмитровская</a><a href="/depo/">Депо</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Курская</a><a href="#">Каланчёвская</a><a href="#">Калитники</a><a href="#">Красногорская</a><a href="#">Красный Балтиец</a><a href="#">Красный Строитель</a><a href="#">Кубанская</a><a href="#">Курьяново</a></div>
+                    <div class="metro__links"><a href="/kurskaya/">Курская</a><a href="/kalanchyovskaya/">Каланчёвская</a><a href="/kalitniki/">Калитники</a><a href="/krasnogorskaya/">Красногорская</a><a href="/krasnyj-baltiecz/">Красный Балтиец</a><a href="/krasnyj-stroitel/">Красный Строитель</a><a href="/kubanskaya/">Кубанская</a><a href="/kuryanovo/">Курьяново</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">М</div>
-                    <div class="metro__links"><a href="#">Москва-Товарная</a><a href="#">Москворечье</a></div>
+                    <div class="metro__links"><a href="/moskva-tovarnaya/">Москва-Товарная</a><a href="/moskvoreche/">Москворечье</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Н</div>
-                    <div class="metro__links"><a href="#">Новохохловская</a><a href="#">Нахабино</a></div>
+                    <div class="metro__links"><a href="/novokhokhlovskaya/">Новохохловская</a><a href="/nakhabino/">Нахабино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">О</div>
-                    <div class="metro__links"><a href="#">Опалиха</a><a href="#">Остафьево</a></div>
+                    <div class="metro__links"><a href="/opalikha/">Опалиха</a><a href="/ostafevo/">Остафьево</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Павшего</a><a href="#">Пенягино</a><a href="#">Перерва</a><a href="#">Подольск</a><a href="#">Покровское</a><a href="#">Покровское-Стрешнево</a></div>
+                    <div class="metro__links"><a href="/pavshego/">Павшего</a><a href="/penyagino/">Пенягино</a><a href="/pererva/">Перерва</a><a href="/podolsk/">Подольск</a><a href="/pokrovskoe/">Покровское</a><a href="/pokrovskoe-streshnevo/">Покровское-Стрешнево</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Р</div>
-                    <div class="metro__links"><a href="#">Рижская</a></div>
+                    <div class="metro__links"><a href="/rizhskaya/">Рижская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Стрешнево</a><a href="#">Силикатная</a></div>
+                    <div class="metro__links"><a href="/streshnevo/">Стрешнево</a><a href="/silikatnaya/">Силикатная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Т</div>
-                    <div class="metro__links"><a href="#">Текстильщики</a><a href="#">Тушинская</a><a href="#">Трикотажная</a></div>
+                    <div class="metro__links"><a href="/tekstilshhiki/">Текстильщики</a><a href="/tushinskaya/">Тушинская</a><a href="/trikotazhnaya/">Трикотажная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ц</div>
-                    <div class="metro__links"><a href="#">Царицыно</a></div>
+                    <div class="metro__links"><a href="/czariczyno/">Царицыно</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Щ</div>
-                    <div class="metro__links"><a href="#">Щербинка</a></div>
+                    <div class="metro__links"><a href="/shherbinka/">Щербинка</a></div>
                   </div>
                 </div>
               </div>
@@ -757,39 +1377,39 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">А</div>
-                    <div class="metro__links"><a href="#">Авиамоторная</a></div>
+                    <div class="metro__links"><a href="/aviamotornaya/">Авиамоторная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Косино</a></div>
+                    <div class="metro__links"><a href="/kosino/">Косино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Л</div>
-                    <div class="metro__links"><a href="#">Лефортово</a><a href="#">Лухмановская</a></div>
+                    <div class="metro__links"><a href="/lefortovo/">Лефортово</a><a href="/lukhmanovskaya/">Лухмановская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Н</div>
-                    <div class="metro__links"><a href="#">Некрасовка</a><a href="#">Нижегородская</a></div>
+                    <div class="metro__links"><a href="/nekrasovka/">Некрасовка</a><a href="/nizhegorodskaya/">Нижегородская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">О</div>
-                    <div class="metro__links"><a href="#">Окская</a></div>
+                    <div class="metro__links"><a href="/okskaya/">Окская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Стахановская</a></div>
+                    <div class="metro__links"><a href="/stakhanovskaya/">Стахановская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">М</div>
-                    <div class="metro__links"><a href="#">Улица Дмитриевского</a></div>
+                    <div class="metro__links"><a href="/ulicza-dmitrievskogo/">Улица Дмитриевского</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Э</div>
-                    <div class="metro__links"><a href="#">Электрозаводская</a></div>
+                    <div class="metro__links"><a href="/elektrozavodskaya/">Электрозаводская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ю</div>
-                    <div class="metro__links"><a href="#">Юго-Восточная</a></div>
+                    <div class="metro__links"><a href="/yugo-vostochnaya/">Юго-Восточная</a></div>
                   </div>
                 </div>
               </div>
@@ -798,59 +1418,59 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">А</div>
-                    <div class="metro__links"><a href="#">Алтуфьево</a><a href="#">Аннино</a></div>
+                    <div class="metro__links"><a href="/altufevo/">Алтуфьево</a><a href="/annino/">Аннино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Бибирево</a><a href="#">Боровицкая</a><a href="#">Бульвар Дмитрия Донского</a></div>
+                    <div class="metro__links"><a href="/bibirevo/">Бибирево</a><a href="/boroviczkaya/">Боровицкая</a><a href="/bulvar-dmitriya-donskogo/">Бульвар Дмитрия Донского</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">В</div>
-                    <div class="metro__links"><a href="#">Владыкино</a></div>
+                    <div class="metro__links"><a href="/vladykino/">Владыкино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Д</div>
-                    <div class="metro__links"><a href="#">Дмитровская</a></div>
+                    <div class="metro__links"><a href="/dmitrovskaya/">Дмитровская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">М</div>
-                    <div class="metro__links"><a href="#">Менделеевская</a></div>
+                    <div class="metro__links"><a href="/mendeleevskaya/">Менделеевская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Н</div>
-                    <div class="metro__links"><a href="#">Нагатинская</a><a href="#">Нагорная</a><a href="#">Нахимовский Проспект</a></div>
+                    <div class="metro__links"><a href="/nagatinskaya/">Нагатинская</a><a href="/nagornaya/">Нагорная</a><a href="/nakhimovskij-prospekt/">Нахимовский Проспект</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">О</div>
-                    <div class="metro__links"><a href="#">Отрадное</a></div>
+                    <div class="metro__links"><a href="/otradnoe/">Отрадное</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Петровско-Разумовская</a><a href="#">Полянка</a><a href="#">Пражская</a></div>
+                    <div class="metro__links"><a href="/petrovsko-razumovskaya/">Петровско-Разумовская</a><a href="/polyanka/">Полянка</a><a href="/prazhskaya/">Пражская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Савеловская</a><a href="#">Севастопольская</a><a href="#">Серпуховская</a></div>
+                    <div class="metro__links"><a href="/savelovskaya/">Савеловская</a><a href="/sevastopolskaya/">Севастопольская</a><a href="/serpukhovskaya/">Серпуховская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Т</div>
-                    <div class="metro__links"><a href="#">Темирязевская</a><a href="#">Тульская</a></div>
+                    <div class="metro__links"><a href="/temiryazevskaya/">Темирязевская</a><a href="/tulskaya/">Тульская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">У</div>
-                    <div class="metro__links"><a href="#">Улица академика Янгеля</a></div>
+                    <div class="metro__links"><a href="/ulicza-akademika-yangelya/">Улица академика Янгеля</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ц</div>
-                    <div class="metro__links"><a href="#">Цветной бульвар</a></div>
+                    <div class="metro__links"><a href="/czvetnoj-bulvar/">Цветной бульвар</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ч</div>
-                    <div class="metro__links"><a href="#">Чертановская</a><a href="#">Чеховская</a></div>
+                    <div class="metro__links"><a href="/chertanovskaya/">Чертановская</a><a href="/chekhovskaya/">Чеховская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ю</div>
-                    <div class="metro__links"><a href="#">Южная</a></div>
+                    <div class="metro__links"><a href="/yuzhnaya/">Южная</a></div>
                   </div>
                 </div>
               </div>
@@ -859,55 +1479,55 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Бульвар Рокоссовского</a><a href="#">Библиотека имени Ленина</a></div>
+                    <div class="metro__links"><a href="/bulvar-rokossovskogo/">Бульвар Рокоссовского</a><a href="/biblioteka-imeni-lenina/">Библиотека имени Ленина</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Воробьёвы горы</a></div>
+                    <div class="metro__links"><a href="/vorobyovy-gory/">Воробьёвы горы</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Комсомольская</a><a href="#">Красносельская</a><a href="#">Красные ворота</a><a href="#">Кропоткинская</a><a href="#">Коммунарка</a></div>
+                    <div class="metro__links"><a href="/komsomolskaya/">Комсомольская</a><a href="/krasnoselskaya/">Красносельская</a><a href="/krasnye-vorota/">Красные ворота</a><a href="/kropotkinskaya/">Кропоткинская</a><a href="/kommunarka/">Коммунарка</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Л</div>
-                    <div class="metro__links"><a href="#">Лубянка</a></div>
+                    <div class="metro__links"><a href="/lubyanka/">Лубянка</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">О</div>
-                    <div class="metro__links"><a href="#">Охотный ряд</a><a href="#">Ольховая</a></div>
+                    <div class="metro__links"><a href="/okhotnyj-ryad/">Охотный ряд</a><a href="/olkhovaya/">Ольховая</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Парк Культуры</a><a href="#">Преображенская площадь</a><a href="#">Проспект Вернадского</a><a href="#">Прошкино</a></div>
+                    <div class="metro__links"><a href="/park-kultury/">Парк Культуры</a><a href="/preobrazhenskaya-ploshhad/">Преображенская площадь</a><a href="/prospekt-vernadskogo/">Проспект Вернадского</a><a href="/proshkino/">Прошкино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Р</div>
-                    <div class="metro__links"><a href="#">Румянцево</a></div>
+                    <div class="metro__links"><a href="/rumyanczevo/">Румянцево</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Сокольники</a><a href="#">Спортивная</a><a href="#">Саларьево</a></div>
+                    <div class="metro__links"><a href="/sokolniki/">Сокольники</a><a href="/sportivnaya/">Спортивная</a><a href="/salarevo/">Саларьево</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Т</div>
-                    <div class="metro__links"><a href="#">Тропарёво</a></div>
+                    <div class="metro__links"><a href="/troparyovo/">Тропарёво</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">У</div>
-                    <div class="metro__links"><a href="#">Университет</a></div>
+                    <div class="metro__links"><a href="/universitet/">Университет</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ф</div>
-                    <div class="metro__links"><a href="#">Фрунзенская</a><a href="#">Филатов Луг</a></div>
+                    <div class="metro__links"><a href="/frunzenskaya/">Фрунзенская</a><a href="/filatov-lug/">Филатов Луг</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ч</div>
-                    <div class="metro__links"><a href="#">Черкизовская</a><a href="#">Чистые пруды</a></div>
+                    <div class="metro__links"><a href="/cherkizovskaya/">Черкизовская</a><a href="/chistye-prudy/">Чистые пруды</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ю</div>
-                    <div class="metro__links"><a href="#">Юго-Западная</a></div>
+                    <div class="metro__links"><a href="/yugo-zapadnaya/">Юго-Западная</a></div>
                   </div>
                 </div>
               </div>
@@ -916,51 +1536,51 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Баррикадная</a><a href="#">Беговая</a></div>
+                    <div class="metro__links"><a href="/barrikadnaya/">Баррикадная</a><a href="/begovaya/">Беговая</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">В</div>
-                    <div class="metro__links"><a href="#">Волгоградский проспект</a><a href="#">Выхино </a></div>
+                    <div class="metro__links"><a href="/volgogradskij-prospekt/">Волгоградский проспект</a><a href="/vykhino/">Выхино </a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ж</div>
-                    <div class="metro__links"><a href="#">Жулебино</a></div>
+                    <div class="metro__links"><a href="/zhulebino/">Жулебино</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Китай-Город</a><a href="#">Котельники</a><a href="#">Кузнецкий мост</a><a href="#">Кузминки</a></div>
+                    <div class="metro__links"><a href="/kitaj-gorod/">Китай-Город</a><a href="/kotelniki/">Котельники</a><a href="/kuzneczkij-most/">Кузнецкий мост</a><a href="/kuzminki/">Кузминки</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Л</div>
-                    <div class="metro__links"><a href="#">Лермонтовский проспект</a></div>
+                    <div class="metro__links"><a href="/lermontovskij-prospekt/">Лермонтовский проспект</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">О</div>
-                    <div class="metro__links"><a href="#">Октябрьское поле</a></div>
+                    <div class="metro__links"><a href="/oktyabrskoe-pole/">Октябрьское поле</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Планерная</a><a href="#">Полежаевская</a><a href="#">Пролетарская</a><a href="#">Пушкинская</a></div>
+                    <div class="metro__links"><a href="/planernaya/">Планерная</a><a href="/polezhaevskaya/">Полежаевская</a><a href="/proletarskaya/">Пролетарская</a><a href="/pushkinskaya/">Пушкинская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Р</div>
-                    <div class="metro__links"><a href="#">Рязанский проспект</a></div>
+                    <div class="metro__links"><a href="/ryazanskij-prospekt/">Рязанский проспект</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Спартак</a><a href="#">Сходненская</a></div>
+                    <div class="metro__links"><a href="/spartak/">Спартак</a><a href="/skhodnenskaya/">Сходненская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Т</div>
-                    <div class="metro__links"><a href="#">Таганская</a><a href="#">Текстильщики</a><a href="#">Тушинская</a></div>
+                    <div class="metro__links"><a href="/taganskaya/">Таганская</a><a href="/tekstilshhiki/">Текстильщики</a><a href="/tushinskaya/">Тушинская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">У</div>
-                    <div class="metro__links"><a href="#">Улица 1905 года</a></div>
+                    <div class="metro__links"><a href="/ulicza-1905-goda/">Улица 1905 года</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Щ</div>
-                    <div class="metro__links"><a href="#">Щукинская</a></div>
+                    <div class="metro__links"><a href="/shhukinskaya/">Щукинская</a></div>
                   </div>
                 </div>
               </div>
@@ -969,35 +1589,35 @@
                 <div class="metro__groups">
                   <div class="metro__group">
                     <div class="metro__group-item">А</div>
-                    <div class="metro__links"><a href="#">Арбатская</a><a href="#">Александровский сад</a></div>
+                    <div class="metro__links"><a href="/arbatskaya/">Арбатская</a><a href="/aleksandrovskij-sad/">Александровский сад</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Б</div>
-                    <div class="metro__links"><a href="#">Багратионовская</a></div>
+                    <div class="metro__links"><a href="/bagrationovskaya/">Багратионовская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">В</div>
-                    <div class="metro__links"><a href="#">Выставочная</a></div>
+                    <div class="metro__links"><a href="/vystavochnaya/">Выставочная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">К</div>
-                    <div class="metro__links"><a href="#">Киевская</a><a href="#">Кунцевская</a><a href="#">Кутузовская</a></div>
+                    <div class="metro__links"><a href="/kievskaya/">Киевская</a><a href="/kunczevskaya/">Кунцевская</a><a href="/kutuzovskaya/">Кутузовская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">М</div>
-                    <div class="metro__links"><a href="#">Международная</a></div>
+                    <div class="metro__links"><a href="/mezhdunarodnaya/">Международная</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">П</div>
-                    <div class="metro__links"><a href="#">Пионерская</a></div>
+                    <div class="metro__links"><a href="/pionerskaya/">Пионерская</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">С</div>
-                    <div class="metro__links"><a href="#">Смоленская</a><a href="#">Студенческая</a></div>
+                    <div class="metro__links"><a href="/smolenskaya/">Смоленская</a><a href="/studencheskaya/">Студенческая</a></div>
                   </div>
                   <div class="metro__group">
                     <div class="metro__group-item">Ф</div>
-                    <div class="metro__links"><a href="#">Филевский парк</a><a href="#">Фили             </a></div>
+                    <div class="metro__links"><a href="/filevskij-park/">Филевский парк</a><a href="/fili/">Фили             </a></div>
                   </div>
                 </div>
               </div>
